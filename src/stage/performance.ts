@@ -130,7 +130,7 @@ export class Performance {
   private reset() {
     for (const w of WHO) {
       const [x, y] = slotPos('wreckage', w);
-      this.chars[w] = { who: w, x, y, facing: 1, spot: 'wreckage', pose: { ...REST }, phase: 0, walking: false, mouth: 'closed', gesture: null, stumble: null, hop: 0, alpha: 1, deck: null, final: null, down: w === 'A' && this.fractured(), seated: false, support: null, fadeT: 0 };
+      this.chars[w] = { who: w, x, y, facing: 1, spot: 'wreckage', pose: { ...REST }, phase: 0, walking: false, mouth: 'closed', gesture: null, stumble: null, hop: 0, alpha: 1, deck: null, final: null, down: w === 'A', seated: false, support: null, fadeT: 0 };
     }
     this.shown = JSON.parse(JSON.stringify(INITIAL));
     this.tracks = []; this.turnIndex = -1; this.pad = 0; this.storm = 1; this.flash = 0; this.speaker = null;
@@ -250,7 +250,8 @@ export class Performance {
       }
       case 'assess_mobility':
         this.face(actor, this.chars.A.x);
-        this.tracks.push(this.gestureTrack(actor, 'examine', Math.max(3, voiceDur)));
+        // a bruised leg: Sam gets up once the check is done; a fractured leg keeps him down
+        this.tracks.push(this.gestureTrack(actor, 'examine', Math.max(3, voiceDur), 0.9, () => { if (!this.fractured()) this.chars.A.down = false; }));
         break;
       case 'check_water': case 'inspect_bottle': {
         const holding = (before.holdings[t.actor] ?? []).some((i) => i.startsWith('bottle'));
@@ -497,7 +498,7 @@ export class Performance {
         case 'call': set({ shoulder_r: -28, elbow_r: -128, shoulder_l: 10, elbow_l: -6, head: -3 }); break;
         case 'examine': set({ lean: 20, bodyY: 22, shoulder_r: -55 + 4 * wob, elbow_r: -20, shoulder_l: -40, elbow_l: -25 }); break;
         case 'hold_up': set({ shoulder_r: -70 + 3 * Math.sin(g.t * 2.2), elbow_r: -70, shoulder_l: -30, elbow_l: -45, head: -4 }); break;
-        case 'pickup': { const dip = Math.sin(Math.min(1, g.t / g.dur) * Math.PI); target.lean = 28 * dip; target.bodyY = 30 * dip; target.shoulder_r = lerp(REST.shoulder_r, -40, dip); target.elbow_r = lerp(REST.elbow_r, -8, dip); target.shoulder_l = lerp(REST.shoulder_l, -20, dip); break; }
+        case 'pickup': { const dip = Math.sin(Math.min(1, g.t / g.dur) * Math.PI); target.lean = 10 * dip; target.bodyY = 44 * dip; /* crouch rather than tilt, so nobody leans over a neighbour */ target.shoulder_r = lerp(REST.shoulder_r, -40, dip); target.elbow_r = lerp(REST.elbow_r, -8, dip); target.shoulder_l = lerp(REST.shoulder_l, -20, dip); break; }
         case 'handover': { const reach = Math.sin(Math.min(1, g.t / g.dur) * Math.PI); target.shoulder_r = lerp(REST.shoulder_r, -82, reach); target.elbow_r = lerp(REST.elbow_r, -6, reach); target.lean = 6 * reach; break; }
         case 'open': set({ shoulder_l: 38 + 8 * wob, shoulder_r: -38 - 8 * wob, elbow_l: 24, elbow_r: -24 }); break;
         case 'point': set({ shoulder_r: -86, elbow_r: -4, shoulder_l: 8, elbow_l: -6 }); break;
