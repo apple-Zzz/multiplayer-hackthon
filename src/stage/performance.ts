@@ -26,7 +26,7 @@ const SHELTER = { cx: 800, bottom: 256, w: 250 };
 const SEATS: Record<Who, [number, number]> = { A: [738, 254], B: [800, 250], C: [862, 254] };   // separate seats under the roof
 const SLOT: Record<Who, number> = { A: -1, B: 0, C: 1 };
 const SLOT_GAP = 104;
-const RADIO: [number, number] = [300, 556];
+const RADIO: [number, number] = [575, 612];   // in front of the wreckage group, clear of Sam lying on his outer side
 const BOTTLE_AT: Record<Spot, [number, number]> = { wreckage: [408, 600], dry_spot: [690, 292], shoreline: [1050, 585] };
 const WALK_ARC = 62;
 const WALK_SPEED = 170;
@@ -650,7 +650,7 @@ export class Performance {
     ctx.font = 'bold 22px -apple-system, sans-serif'; ctx.textAlign = 'center';
     ctx.lineWidth = 5; ctx.strokeStyle = 'rgba(0,0,0,0.75)'; ctx.fillStyle = '#ffe38a';
     const label = (t: string, x: number, y: number) => { ctx.strokeText(t, x, y); ctx.fillText(t, x, y); };
-    label('damaged radio', RADIO[0], RADIO[1] + 50);
+    label('damaged radio', RADIO[0] + 45, RADIO[1] + 50);
     label('two water bottles', BOTTLE_AT.wreckage[0] + 12, BOTTLE_AT.wreckage[1] + 42);
     ctx.fillStyle = '#ffffff'; ctx.font = 'bold 19px -apple-system, sans-serif';
     for (const c of Object.values(this.chars)) label(NAMES[c.who], c.x, c.y + 30);
