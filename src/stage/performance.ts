@@ -578,7 +578,9 @@ export class Performance {
     if (c.alpha <= 0.01) return;
     this.ctx.save();
     this.ctx.globalAlpha = c.alpha;
-    drawCharacter(this.ctx, this.rig, c.who, x, y, scale, c.facing, c.pose, c.mouth, this.heldBy(c.who), drawBottle);
+    // On the ground Sam always lies toward the outside (his slot is leftmost), so his body never covers the others.
+    const facing = c.stumble ? -1 : c.down && !c.walking ? 1 : c.facing;
+    drawCharacter(this.ctx, this.rig, c.who, x, y, scale, facing, c.pose, c.mouth, this.heldBy(c.who), drawBottle);
     this.ctx.restore();
   }
 
