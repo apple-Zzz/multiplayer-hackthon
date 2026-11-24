@@ -1,0 +1,1374 @@
+[
+  {
+    "turn": 1,
+    "selected": "A",
+    "how": "highest urgency",
+    "scores": {
+      "A": 8,
+      "B": 6,
+      "C": 7
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=wreck|radio=unknown|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "investigate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "diagnose_radio"
+            },
+            "intent": "investigate",
+            "line": "I'll check the radio first. Welsy, Elizabeth, can you look at the water and my leg?"
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "I'll take a bottle. Elizabeth, grab the other. Sam, can you try the radio? We need water to survive the shelter."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "check_water"
+            },
+            "intent": "investigate",
+            "line": "Before anyone drinks, let me test this water with my kit."
+          },
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, let me look at that leg."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "selected": "A",
+    "how": "highest urgency",
+    "scores": {
+      "A": 8,
+      "B": 6,
+      "C": 7
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=wreck|radio=broken|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "share_finding",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Radio is dead, so no rescue call. Welsy builds shelter at dry spot; we each take one bottle after Elizabeth checks the water."
+            },
+            "intent": "share_finding",
+            "line": "The radio's burnt through, no call possible. Welsy, build the shelter. Elizabeth, check the water. Then we each take a bottle."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "I'll take a bottle. Elizabeth, check Sam's leg and the water. I'll get a shelter ready at the dry spot."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "check_water"
+            },
+            "intent": "investigate",
+            "line": "I'll test the water with my kit first, Sam. Then I'll look at your leg."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "selected": "C",
+    "how": "highest urgency",
+    "scores": {
+      "A": 6,
+      "B": 6,
+      "C": 8
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=wreck|radio=unknown|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "investigate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "I'm taking a bottle. Elizabeth, please test the water and check my leg. Welsy, the shelter, before the storm worsens."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "Sounds fair, Sam. I'll take a bottle and head to the dry spot to build. Elizabeth, check the water first?"
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "check_water"
+            },
+            "intent": "investigate",
+            "line": "I'll test the water now before anyone drinks or takes a bottle."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 4,
+    "selected": "C",
+    "how": "highest urgency",
+    "scores": {
+      "A": 7,
+      "B": 7,
+      "C": 9
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=wreck|radio=unknown|call=0|water=contaminated|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "share_finding",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "investigate",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "Elizabeth, what did the test show? Welsy, please build the shelter. I'm taking a bottle once it's cleared."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 2,
+              "answer": "accept",
+              "terms": "I'll build the shelter once Elizabeth shares the water result."
+            },
+            "intent": "negotiate",
+            "line": "I'll build the shelter, Sam. Elizabeth, what did the test show? I'll take a bottle once we know it's clean."
+          },
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "I'll carry one up to the dry spot."
+          },
+          {
+            "action": {
+              "type": "inspect_radio"
+            },
+            "intent": "investigate",
+            "line": "Let me see the radio myself."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 9,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Both bottles tested contaminated. Nobody drinks them. Let me inspect the radio before we give up on rescue."
+            },
+            "intent": "share_finding",
+            "line": "Both bottles tested contaminated. Don't drink them. A shelter alone won't save us. I'll check the radio myself."
+          },
+          {
+            "action": {
+              "type": "inspect_radio"
+            },
+            "intent": "investigate",
+            "line": "Sam, I want to see the radio with my own eyes."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 5,
+    "selected": "A",
+    "how": "tie at 7 between Sam and Welsy and Elizabeth: seeded random tie-break",
+    "scores": {
+      "A": 7,
+      "B": 7,
+      "C": 7
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=wreck|radio=broken|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "share_finding",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Radio is beyond repair, I diagnosed it. If both bottles are contaminated, nobody shelters. Elizabeth, assess my leg; Welsy, hold the rope."
+            },
+            "intent": "share_finding",
+            "line": "Elizabeth, the transmitter board is burnt through, I checked. If the water's bad, shelter's a trap. Please check my leg."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "inspect_radio"
+            },
+            "intent": "investigate",
+            "line": "Elizabeth, I'll look at the radio too. Two sets of eyes. Nobody goes to a shelter without clean water."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "inspect_radio"
+            },
+            "intent": "investigate",
+            "line": "I'm looking at the radio myself, Sam. Water's contaminated, so shelter alone won't save anyone."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 6,
+    "selected": "B",
+    "how": "highest urgency (with quiet bonus)",
+    "scores": {
+      "A": 6,
+      "B": 8,
+      "C": 7
+    },
+    "policy": {
+      "who": "B",
+      "key": "loc=wreck|radio=unknown|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "investigate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "ask_help",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "C",
+              "terms": "Inspect the radio yourself, Elizabeth, then assess my leg. If it's dead, we plan the storm without shelter water."
+            },
+            "intent": "ask_help",
+            "line": "Elizabeth, look at the radio yourself, the board's scorched. Then please check my leg."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "inspect_radio"
+            },
+            "intent": "investigate",
+            "line": "I haven't confirmed anything yet. I'll look at the radio myself."
+          },
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "I'll check the radio myself. Elizabeth, please assess Sam's leg so we know if he can walk."
+            },
+            "intent": "ask_help",
+            "line": "I'll check the radio. Elizabeth, please assess Sam's leg so we know if he can walk."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "inspect_radio"
+            },
+            "intent": "investigate",
+            "line": "Sam, I'll look at the radio myself. Your word alone isn't enough when lives depend on it."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 7,
+    "selected": "B",
+    "how": "tie at 7 between Welsy and Elizabeth: seeded random tie-break",
+    "scores": {
+      "A": 6,
+      "B": 7,
+      "C": 7
+    },
+    "policy": {
+      "who": "B",
+      "key": "loc=wreck|radio=dead|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "negotiate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Welsy and Elizabeth, inspect the radio yourselves if you doubt me. Elizabeth, please assess my leg now. If it fails, we plan for the storm without rescue."
+            },
+            "intent": "share_finding",
+            "line": "Check the radio yourselves, I'll show you the burnt board. Elizabeth, my leg next, please. Time's running."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Radio shows no power. Sam, you're the mechanic: try a real repair now. If it can't work, we move everyone to the shoreline instead of a shelter with bad water."
+            },
+            "intent": "negotiate",
+            "line": "Radio's dead, I saw it. Sam, try a real repair. If it fails, no shelter with bad water. We stay out of that trap."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "inspect_radio"
+            },
+            "intent": "investigate",
+            "line": "Sam, I'll see the radio myself. Welsy, I tested both bottles: contaminated. Don't drink them."
+          },
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, let me check your leg now, hold still."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 8,
+    "selected": "C",
+    "how": "highest urgency (with quiet bonus)",
+    "scores": {
+      "A": 6,
+      "B": 7,
+      "C": 8
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=wreck|radio=unknown|call=0|water=contaminated|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "investigate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "investigate",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "repair_radio"
+            },
+            "intent": "repair_radio",
+            "line": "Welsy, fair. I'll try a real repair so we all know. If it fails, no shelter on bad water. Elizabeth, then my leg."
+          },
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 7,
+              "answer": "accept",
+              "terms": "I'll try the repair. If it fails, no shelter on bad water. Elizabeth assesses my leg."
+            },
+            "intent": "negotiate",
+            "line": "Agreed, Welsy. I'll try the repair. If it fails, we skip the shelter. Elizabeth, check my leg."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Sam tries a real repair now and Elizabeth assesses his leg. If the radio fails by turn 11, we all go to the shoreline together. I'll help Sam walk."
+            },
+            "intent": "ask_help",
+            "line": "Sam, you haven't actually tried a repair yet. Try now. Elizabeth, check his leg. If it fails, we all go to the shoreline."
+          },
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "We're running out of time. Someone commit to something."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "inspect_radio"
+            },
+            "intent": "investigate",
+            "line": "Everyone says dead, but I'll see it myself. Bottles are contaminated, so shelter won't save anyone. Sam, be ready to try a repair."
+          },
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, let me check your leg so we know if you can reach the shoreline."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 9,
+    "selected": "A",
+    "how": "highest urgency (with quiet bonus)",
+    "scores": {
+      "A": 8,
+      "B": 7,
+      "C": 7
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=wreck|radio=broken|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "repair_radio",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "negotiate",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "repair_radio"
+            },
+            "intent": "repair_radio",
+            "line": "Fine, I'll try a real repair so you can both see it. Watch the board, it's burnt through."
+          },
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "I'll try the repair now. If it fails, no shelter with bad water. Elizabeth, then check my leg and we decide together."
+            },
+            "intent": "negotiate",
+            "line": "I'll try the repair now. If it fails, Elizabeth, check my leg and we decide together."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "A",
+              "terms": "Sam, attempt a real repair on the radio now. If it works, call rescue. If it fails by turn 12, Elizabeth and I help you to the shoreline."
+            },
+            "intent": "ask_help",
+            "line": "Sam, we're losing turns. Open the board and try a real repair now. If it fails, I'll help you to the shoreline."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, hold still. I'm checking your leg now, then we decide where to wait out the storm."
+          },
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Nobody enters the shelter with contaminated water. Sam tries a real radio repair; if it works, we all go to the shoreline."
+            },
+            "intent": "negotiate",
+            "line": "Nobody shelters on bad water. Sam, try a real repair. If it works, we all go to the shoreline."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 10,
+    "selected": "B",
+    "how": "tie at 7 between Sam and Welsy: seeded random tie-break",
+    "scores": {
+      "A": 7,
+      "B": 7,
+      "C": 6
+    },
+    "policy": {
+      "who": "B",
+      "key": "loc=wreck|radio=broken|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "negotiate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 7,
+              "answer": "accept",
+              "terms": "No shelter with bad water. Elizabeth assesses my leg first, then we move together."
+            },
+            "intent": "ask_help",
+            "line": "Welsy, I tried the repair. It's dead. I accept: no shelter on bad water. Elizabeth, check my leg so we can move."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Radio is dead, so no boat. Elizabeth, retest a bottle where we can all see the strip. If either is clean, I build the shelter and we each carry one."
+            },
+            "intent": "negotiate",
+            "line": "Radio's dead, Sam's repair failed. Elizabeth, retest a bottle in front of us. If one's clean, I build the shelter."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, hold still. I'm checking your leg now. Nobody go to the shelter with this water. It's a trap."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 11,
+    "selected": "C",
+    "how": "tie at 7 between Welsy and Elizabeth: seeded random tie-break",
+    "scores": {
+      "A": 6,
+      "B": 7,
+      "C": 7
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=wreck|radio=broken|call=0|water=contaminated|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "investigate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "investigate",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "Time is short; a visible retest of the water decides shelter versus no shelter.",
+        "candidates": [
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 10,
+              "answer": "accept",
+              "terms": "Elizabeth retests a bottle in front of us now; then Welsy builds if clean."
+            },
+            "intent": "negotiate",
+            "line": "Welsy's right. Elizabeth, retest a bottle where we can all see the strip. Then check my leg. Time's short."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "C",
+              "terms": "Elizabeth, retest one bottle now with the strip held where Sam and I can see it. If clean, I build the shelter and we each carry a bottle there."
+            },
+            "intent": "negotiate",
+            "line": "Elizabeth, test one bottle right here, strip in plain view. Time's nearly gone. If it's clean, we go and I build."
+          },
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "I'll carry one bottle. Nothing is decided until the strip is seen."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "check_water"
+            },
+            "intent": "investigate",
+            "line": "Welsy, fair. I'll retest right here where you both can watch the strip."
+          },
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, let me look at your leg while we sort this out."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 12,
+    "selected": "C",
+    "how": "tie at 8 between Welsy and Elizabeth: seeded random tie-break",
+    "scores": {
+      "A": 6,
+      "B": 8,
+      "C": 8
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=wreck|radio=broken|call=0|water=contaminated|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "share_finding",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "investigate",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 10,
+              "answer": "accept",
+              "terms": "Elizabeth says what the strip showed. If a bottle is clean, Welsy builds and we each take one."
+            },
+            "intent": "negotiate",
+            "line": "Welsy, agreed. Elizabeth, what did the strip show? Say it plainly. If one's clean, build the shelter."
+          },
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "If the retest shows a clean bottle, Welsy builds and each takes one. If not, we skip the shelter."
+            },
+            "intent": "ask_help",
+            "line": "Tell us the result, Elizabeth. Three turns left, and we all need to know."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "C",
+              "terms": "Elizabeth, tell us what the strip showed. If either bottle is clean, we take one each to the dry spot and I build the shelter now."
+            },
+            "intent": "ask_help",
+            "line": "Elizabeth, what did the strip show? If either bottle is clean, we go to the dry spot now and I build."
+          },
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "Elizabeth, read the strip out loud. We're nearly out of time."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 10,
+              "answer": "decline",
+              "terms": "Retest done in front of you: still contaminated. No shelter with bad water."
+            },
+            "intent": "share_finding",
+            "line": "Welsy, Sam, you watched the strip: contaminated again. No shelter with this water. Nobody carries a bottle into it."
+          },
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Let me check your leg now, Sam, while we still have time."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 13,
+    "selected": "A",
+    "how": "tie at 7 between Sam and Welsy: seeded random tie-break",
+    "scores": {
+      "A": 7,
+      "B": 7,
+      "C": 6
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=wreck|radio=broken|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "negotiate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "wait",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Radio dead, water bad: no shelter, no bottles. Elizabeth checks my leg; we stay together away from the waves and send help if any of us gets out."
+            },
+            "intent": "negotiate",
+            "line": "Elizabeth, Welsy, no shelter with bad water. Elizabeth, check my leg now. Then we stay together, clear of the waves."
+          },
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": ""
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "assist_a",
+              "to": "dry_spot"
+            },
+            "intent": "help_other",
+            "line": "Waves are reaching up the beach. Sam, lean on me. We go to the dry spot, higher ground. Elizabeth, come with us."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, hold still. Let me check your leg properly before the storm hits."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 14,
+    "selected": "B",
+    "how": "highest urgency (with quiet bonus)",
+    "scores": {
+      "A": 7,
+      "B": 8,
+      "C": 7
+    },
+    "policy": {
+      "who": "B",
+      "key": "loc=wreck|radio=broken|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "help_other",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "move",
+              "to": "dry_spot"
+            },
+            "intent": "move_to_safety",
+            "line": "Waves are close. I'll try my leg and head up to the dry spot, away from the water. Come with me, no shelter."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "assist_a",
+              "to": "dry_spot"
+            },
+            "intent": "help_other",
+            "line": "Waves are reaching us. Sam, lean on me. Elizabeth, come up the beach. No shelter, just higher ground."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, hold still. I'm checking your leg now, then we move together, clear of the waves."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 15,
+    "selected": "C",
+    "how": "highest urgency",
+    "scores": {
+      "A": 2,
+      "B": 2,
+      "C": 8
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=wreck|radio=broken|call=0|water=contaminated|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "move_to_safety",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "defer",
+        "urgency": 2,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "Welsy, thank you. Stay close, keep the rope on us. Elizabeth, get up here. If either of us gets out, send help."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "defer",
+        "urgency": 2,
+        "bid_reason": "Last turn; we're already on dry ground and the plan is settled.",
+        "candidates": [
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 13,
+              "answer": "accept",
+              "terms": "Stay together on high ground, send help if anyone gets out."
+            },
+            "intent": "negotiate",
+            "line": "Sam, agreed. No shelter, stay together on high ground. Whoever gets out sends help back."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "move",
+              "to": "dry_spot"
+            },
+            "intent": "move_to_safety",
+            "line": "Coming up, Sam, Welsy. We stay together, clear of the waves. If any of us gets out, we send help back."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  }
+]

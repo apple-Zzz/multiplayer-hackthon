@@ -1,0 +1,246 @@
+[
+  {
+    "id": "run-01",
+    "finishedAt": "2026-11-23T22:22:06.802Z",
+    "hidden": {
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean"
+    },
+    "rescued": [
+      "A",
+      "B"
+    ],
+    "sheltered": [
+      "C"
+    ],
+    "outcome": {
+      "A": "rescued — boarded the patrol boat from the shoreline",
+      "B": "rescued — boarded the patrol boat from the shoreline",
+      "C": "sheltered — waits out the storm at the dry spot with a clean bottle"
+    }
+  },
+  {
+    "id": "run-02",
+    "rules": "v2",
+    "mode": "showcase",
+    "seed": 103,
+    "finishedAt": "2026-11-24T00:17:18.149Z",
+    "hidden": {
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean"
+    },
+    "status": {
+      "A": "rescued",
+      "B": "sheltered_survived",
+      "C": "rescued"
+    },
+    "rescued": [
+      "A",
+      "C"
+    ],
+    "sheltered": [
+      "B"
+    ]
+  },
+  {
+    "id": "run-03",
+    "rules": "v2",
+    "mode": "showcase",
+    "seed": 109,
+    "finishedAt": "2026-11-24T00:22:17.702Z",
+    "hidden": {
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "clean"
+    },
+    "status": {
+      "A": "rescued",
+      "B": "sheltered_survived",
+      "C": "rescued"
+    },
+    "rescued": [
+      "A",
+      "C"
+    ],
+    "sheltered": [
+      "B"
+    ]
+  },
+  {
+    "id": "run-04",
+    "rules": "v2",
+    "mode": "showcase",
+    "seed": 103,
+    "finishedAt": "2026-11-24T01:08:11.001Z",
+    "hidden": {
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean"
+    },
+    "status": {
+      "A": "rescued",
+      "B": "sheltered_survived",
+      "C": "rescued"
+    },
+    "rescued": [
+      "A",
+      "C"
+    ],
+    "sheltered": [
+      "B"
+    ]
+  },
+  {
+    "id": "run-05",
+    "rules": "v2",
+    "mode": "showcase",
+    "seed": 105,
+    "finishedAt": "2026-11-24T01:08:29.205Z",
+    "hidden": {
+      "mobility": "needs_help",
+      "radio": "beyond_repair",
+      "water": "clean"
+    },
+    "status": {
+      "A": "sheltered_survived",
+      "B": "failed",
+      "C": "sheltered_survived"
+    },
+    "rescued": [],
+    "sheltered": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "run-06",
+    "rules": "v2",
+    "mode": "showcase",
+    "seed": 101,
+    "finishedAt": "2026-11-24T01:08:41.631Z",
+    "hidden": {
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "contaminated"
+    },
+    "status": {
+      "A": "rescued",
+      "B": "unresolved",
+      "C": "rescued"
+    },
+    "rescued": [
+      "A",
+      "C"
+    ],
+    "sheltered": []
+  },
+  {
+    "id": "run-07",
+    "rules": "v2",
+    "mode": "showcase",
+    "seed": 112,
+    "finishedAt": "2026-11-24T01:08:43.406Z",
+    "hidden": {
+      "mobility": "independent",
+      "radio": "beyond_repair",
+      "water": "contaminated"
+    },
+    "status": {
+      "A": "unresolved",
+      "B": "unresolved",
+      "C": "unresolved"
+    },
+    "rescued": [],
+    "sheltered": []
+  },
+  {
+    "id": "run-08",
+    "rules": "v3",
+    "mode": "showcase",
+    "seed": 98213,
+    "finishedAt": "2026-11-24T01:31:46.827Z",
+    "hidden": {
+      "mobility": "needs_help",
+      "radio": "beyond_repair",
+      "water": "clean"
+    },
+    "status": {
+      "A": "sheltered_survived",
+      "B": "sheltered_survived",
+      "C": "sheltered_survived"
+    },
+    "rescued": [],
+    "sheltered": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "run-09",
+    "rules": "v3",
+    "mode": "showcase",
+    "seed": 25517,
+    "finishedAt": "2026-11-24T01:32:03.361Z",
+    "hidden": {
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean"
+    },
+    "status": {
+      "A": "rescued",
+      "B": "died",
+      "C": "died"
+    },
+    "rescued": [
+      "A"
+    ],
+    "sheltered": []
+  },
+  {
+    "id": "run-10",
+    "rules": "v3",
+    "mode": "showcase",
+    "seed": 5690,
+    "finishedAt": "2026-11-24T01:32:10.549Z",
+    "hidden": {
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "clean"
+    },
+    "status": {
+      "A": "sheltered_survived",
+      "B": "sheltered_survived",
+      "C": "died"
+    },
+    "rescued": [],
+    "sheltered": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "run-11",
+    "rules": "v3",
+    "mode": "showcase",
+    "seed": 6319,
+    "finishedAt": "2026-11-24T01:32:35.400Z",
+    "hidden": {
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "contaminated"
+    },
+    "status": {
+      "A": "rescued",
+      "B": "rescued",
+      "C": "died"
+    },
+    "rescued": [
+      "A",
+      "B"
+    ],
+    "sheltered": []
+  }
+]

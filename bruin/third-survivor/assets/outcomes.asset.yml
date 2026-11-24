@@ -1,0 +1,25 @@
+name: raw.outcomes
+type: duckdb.seed
+description: Final status of each character in each run (resolved only after turn 15) and whether they met their own goal.
+parameters:
+  path: ./outcomes.csv
+columns:
+  - { name: run_id, type: varchar, checks: [{ name: not_null }] }
+  - { name: rules, type: varchar }
+  - { name: mode, type: varchar }
+  - { name: seed, type: integer }
+  - { name: character_id, type: varchar }
+  - { name: character, type: varchar, checks: [{ name: accepted_values, value: ["Sam", "Welsy", "Elizabeth"] }] }
+  - { name: status, type: varchar, checks: [{ name: accepted_values, value: ["rescued", "sheltered_survived", "died", "failed", "unresolved"] }] }
+  - { name: status_label, type: varchar }
+  - { name: how, type: varchar }
+  - { name: survived, type: boolean }
+  - { name: goal_met, type: boolean }
+  - { name: goal_score, type: double }
+  - { name: goal_detail, type: varchar }
+  - { name: final_spot, type: varchar }
+  - { name: mobility, type: varchar }
+  - { name: radio, type: varchar }
+  - { name: water, type: varchar }
+  - { name: boat_arrived, type: boolean }
+  - { name: shelter_built, type: boolean }

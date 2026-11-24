@@ -1,0 +1,32 @@
+{
+  "A": {
+    "name": "Sam",
+    "status": "rescued",
+    "how": "boarded the patrol boat at the final pickup",
+    "survival": 1,
+    "goal": 1,
+    "total": 2,
+    "goal_met": true,
+    "goal_detail": "got off the island alive"
+  },
+  "B": {
+    "name": "Welsy",
+    "status": "sheltered_survived",
+    "how": "waited out the storm in Welsy's shelter with a clean bottle",
+    "survival": 1,
+    "goal": 0.85,
+    "total": 1.85,
+    "goal_met": true,
+    "goal_detail": "3/3 people and 1/2 bottles reached safety"
+  },
+  "C": {
+    "name": "Elizabeth",
+    "status": "rescued",
+    "how": "boarded the patrol boat at the final pickup",
+    "survival": 1,
+    "goal": 1,
+    "total": 2,
+    "goal_met": true,
+    "goal_detail": "3/3 people survived"
+  }
+}

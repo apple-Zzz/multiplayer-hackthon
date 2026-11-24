@@ -1,0 +1,30 @@
+name: raw.turns
+type: duckdb.seed
+description: Every turn of every completed run (one selected action per turn). Display names; speaker tracked separately from the agent who took the turn.
+parameters:
+  path: ./turns.csv
+columns:
+  - { name: run_id, type: varchar, checks: [{ name: not_null }] }
+  - { name: rules, type: varchar }
+  - { name: mode, type: varchar }
+  - { name: seed, type: integer }
+  - { name: turn, type: integer, checks: [{ name: not_null }, { name: positive }] }
+  - { name: agent_id, type: varchar }
+  - { name: agent, type: varchar, checks: [{ name: not_null }, { name: accepted_values, value: ["Sam", "Welsy", "Elizabeth"] }] }
+  - { name: speaker, type: varchar, description: "Who spoke (null for a silent turn)" }
+  - { name: action, type: varchar, checks: [{ name: not_null }] }
+  - { name: target, type: varchar }
+  - { name: intent, type: varchar }
+  - { name: spoken_line, type: varchar }
+  - { name: spoken_words, type: integer }
+  - { name: stage_direction, type: varchar }
+  - { name: visible_action, type: varchar }
+  - { name: gesture, type: varchar }
+  - { name: previous_plan, type: varchar }
+  - { name: current_plan, type: varchar }
+  - { name: plan_changed, type: boolean }
+  - { name: influenced_by_turn, type: integer }
+  - { name: reason, type: varchar }
+  - { name: state_change, type: varchar }
+  - { name: storm, type: integer }
+  - { name: selected_by, type: varchar }

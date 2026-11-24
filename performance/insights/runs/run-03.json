@@ -1,0 +1,155 @@
+{
+  "run_id": "run-03",
+  "mode": "showcase",
+  "speaking": [
+    {
+      "run_id": "run-03",
+      "agent": "Elizabeth",
+      "turns_taken": 6,
+      "spoken_turns": 6,
+      "spoken_words": 121
+    },
+    {
+      "run_id": "run-03",
+      "agent": "Sam",
+      "turns_taken": 4,
+      "spoken_turns": 4,
+      "spoken_words": 67
+    },
+    {
+      "run_id": "run-03",
+      "agent": "Welsy",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 88
+    }
+  ],
+  "most_spoken_by_turns": "Elizabeth",
+  "most_spoken_by_words": "Elizabeth",
+  "plan_changes": [
+    {
+      "run_id": "run-03",
+      "turn": 5,
+      "agent": "Elizabeth",
+      "previous_plan": "Establish whether the water is clean before anyone drinks or we plan shelter; then assess Sam's leg.",
+      "current_plan": "Share that water is clean, then learn whether Sam can walk to the shoreline before planning boarding and shelter.",
+      "reason": "The radio works and the boat takes two committed people at the shoreline; Sam's mobility decides who can reach the pickup point in time.",
+      "prompted_by_turn": 4,
+      "prompted_by_agent": "Welsy",
+      "prompt_stage_direction": "Welsy steps to the radio, keeping the rope over one shoulder, and leans in to the speaker. She presses the call switch and holds it, watching the indicator.",
+      "prompt_line": "Sam, the radio's lit. Let's get a distress call out before the wind builds.",
+      "resulting_stage_direction": "Elizabeth kneels beside Sam, sets the first-aid kit open on the sand, and gently checks his injured leg, watching his face as she presses along the shin."
+    },
+    {
+      "run_id": "run-03",
+      "turn": 6,
+      "agent": "Elizabeth",
+      "previous_plan": "Share that water is clean, then learn whether Sam can walk to the shoreline before planning boarding and shelter.",
+      "current_plan": "Get Sam to the shoreline for boarding, then decide who else boards and whether Welsy builds shelter with a clean bottle for whoever stays.",
+      "reason": "Sam cannot bear weight and the boat takes committed people at the shoreline, so he has to be moved now.",
+      "prompted_by_turn": 5,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth kneels beside Sam, sets the first-aid kit open on the sand, and gently checks his injured leg, watching his face as she presses along the shin.",
+      "prompt_line": "Both bottles are clean, so nobody drinks from anything else. Sam, let me look at your leg before we decide who walks where.",
+      "resulting_stage_direction": "Elizabeth slides under Sam's arm on his uninjured side and takes his weight. She steadies him and begins guiding him slowly toward the shoreline."
+    },
+    {
+      "run_id": "run-03",
+      "turn": 7,
+      "agent": "Sam",
+      "previous_plan": "Repair the radio now, then call for rescue once it works and people are ready to commit at the shoreline.",
+      "current_plan": "Commit to boarding at the shoreline now, since the distress call succeeded. Then get Welsy and Elizabeth to the pickup point and make sure the boat's two places are used well.",
+      "reason": "The call succeeded and only the first two committed people board, so I should lock in a place now while I am already at the shoreline.",
+      "prompted_by_turn": 4,
+      "prompted_by_agent": "Welsy",
+      "prompt_stage_direction": "Welsy steps to the radio, keeping the rope over one shoulder, and leans in to the speaker. She presses the call switch and holds it, watching the indicator.",
+      "prompt_line": "Sam, the radio's lit. Let's get a distress call out before the wind builds.",
+      "resulting_stage_direction": "Sam plants his good leg at the shoreline pickup point, sets the toolkit down beside him, and turns to face the water where the boat will come."
+    },
+    {
+      "run_id": "run-03",
+      "turn": 8,
+      "agent": "Elizabeth",
+      "previous_plan": "Get Sam to the shoreline for boarding, then decide who else boards and whether Welsy builds shelter with a clean bottle for whoever stays.",
+      "current_plan": "Board with Sam on the two committed places. Welsy builds shelter at the dry spot and keeps one clean bottle.",
+      "reason": "Sam is committed and the boat takes two. I am the second committed person, which secures both places and leaves shelter for Welsy.",
+      "prompted_by_turn": 7,
+      "prompted_by_agent": "Sam",
+      "prompt_stage_direction": "Sam plants his good leg at the shoreline pickup point, sets the toolkit down beside him, and turns to face the water where the boat will come.",
+      "prompt_line": "I'm committed to the boat. I'm standing here at the pickup point. Welsy, Elizabeth, come up when you can.",
+      "resulting_stage_direction": "Elizabeth sets the first-aid kit down at the pickup point and stands square beside Sam, facing the wreckage. She raises her hand toward Welsy."
+    },
+    {
+      "run_id": "run-03",
+      "turn": 9,
+      "agent": "Welsy",
+      "previous_plan": "Get a distress call out while the radio works, then get to the shoreline and commit a place on the patrol boat.",
+      "current_plan": "Take a clean bottle, carry it to the dry spot, and build the storm shelter with rope and beach wood before the storm hits.",
+      "reason": "Boat places are already committed by Sam and Elizabeth; the shelter needs a clean bottle held by someone at the finished shelter.",
+      "prompted_by_turn": 4,
+      "prompted_by_agent": "Welsy",
+      "prompt_stage_direction": "Welsy steps to the radio, keeping the rope over one shoulder, and leans in to the speaker. She presses the call switch and holds it, watching the indicator.",
+      "prompt_line": "Sam, the radio's lit. Let's get a distress call out before the wind builds.",
+      "resulting_stage_direction": "Welsy crouches by the sand, lifts the first water bottle, checks the seal, and tucks it under her arm with the rope."
+    }
+  ],
+  "survival": [
+    {
+      "run_id": "run-03",
+      "mode": "showcase",
+      "seed": 109,
+      "character_id": "A",
+      "character": "Sam",
+      "status": "rescued",
+      "status_label": "rescued",
+      "how": "boarded the patrol boat at the final pickup",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "got off the island alive",
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    },
+    {
+      "run_id": "run-03",
+      "mode": "showcase",
+      "seed": 109,
+      "character_id": "B",
+      "character": "Welsy",
+      "status": "sheltered_survived",
+      "status_label": "sheltered and survived",
+      "how": "waited out the storm in Welsy's shelter with a clean bottle",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 0.85,
+      "goal_detail": "3/3 people and 1/2 bottles reached safety",
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    },
+    {
+      "run_id": "run-03",
+      "mode": "showcase",
+      "seed": 109,
+      "character_id": "C",
+      "character": "Elizabeth",
+      "status": "rescued",
+      "status_label": "rescued",
+      "how": "boarded the patrol boat at the final pickup",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "3/3 people survived",
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    }
+  ]
+}

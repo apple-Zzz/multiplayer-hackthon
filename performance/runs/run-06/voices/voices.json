@@ -1,0 +1,84 @@
+{
+  "voices": {
+    "A": "Reed (English (US))",
+    "B": "Moira",
+    "C": "Karen"
+  },
+  "turns": {
+    "1": {
+      "file": "turn-01.m4a",
+      "actor": "A",
+      "duration": 5.056054
+    },
+    "2": {
+      "file": "turn-02.m4a",
+      "actor": "A",
+      "duration": 6.432018
+    },
+    "3": {
+      "file": "turn-03.m4a",
+      "actor": "A",
+      "duration": 5.408027
+    },
+    "4": {
+      "file": "turn-04.m4a",
+      "actor": "B",
+      "duration": 5.712154
+    },
+    "5": {
+      "file": "turn-05.m4a",
+      "actor": "C",
+      "duration": 4.342177
+    },
+    "6": {
+      "file": "turn-06.m4a",
+      "actor": "C",
+      "duration": 6.548073
+    },
+    "7": {
+      "file": "turn-07.m4a",
+      "actor": "B",
+      "duration": 6.153333
+    },
+    "8": {
+      "file": "turn-08.m4a",
+      "actor": "B",
+      "duration": 5.085215
+    },
+    "9": {
+      "file": "turn-09.m4a",
+      "actor": "A",
+      "duration": 7.840045
+    },
+    "10": {
+      "file": "turn-10.m4a",
+      "actor": "C",
+      "duration": 4.156417
+    },
+    "11": {
+      "file": "turn-11.m4a",
+      "actor": "B",
+      "duration": 5.874694
+    },
+    "12": {
+      "file": "turn-12.m4a",
+      "actor": "C",
+      "duration": 4.922676
+    },
+    "13": {
+      "file": "turn-13.m4a",
+      "actor": "C",
+      "duration": 5.596054
+    },
+    "14": {
+      "file": "turn-14.m4a",
+      "actor": "A",
+      "duration": 5.600045
+    },
+    "15": {
+      "file": "turn-15.m4a",
+      "actor": "B",
+      "duration": 4.876236
+    }
+  }
+}

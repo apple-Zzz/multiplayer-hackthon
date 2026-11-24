@@ -1,0 +1,333 @@
+{
+  "joints": {
+    "torso": {
+      "sockets": {
+        "neck": [
+          0.5,
+          0.07
+        ],
+        "shoulder_l": [
+          0.1,
+          0.18
+        ],
+        "shoulder_r": [
+          0.9,
+          0.18
+        ],
+        "hip_l": [
+          0.3,
+          0.86
+        ],
+        "hip_r": [
+          0.7,
+          0.86
+        ]
+      }
+    },
+    "head": {
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "sockets": {
+        "mouth": [
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "upper_arm": {
+      "pivot": [
+        0.5,
+        0.13
+      ],
+      "sockets": {
+        "elbow": [
+          0.5,
+          0.86
+        ]
+      }
+    },
+    "forearm": {
+      "pivot": [
+        0.5,
+        0.08
+      ],
+      "sockets": {
+        "hand": [
+          0.5,
+          0.88
+        ]
+      }
+    },
+    "thigh": {
+      "pivot": [
+        0.5,
+        0.12
+      ],
+      "sockets": {
+        "knee": [
+          0.5,
+          0.86
+        ]
+      }
+    },
+    "lower_leg": {
+      "pivot": [
+        0.5,
+        0.07
+      ],
+      "sockets": {
+        "foot": [
+          0.5,
+          0.99
+        ]
+      }
+    },
+    "mouth": {
+      "pivot": [
+        0.5,
+        0.5
+      ]
+    },
+    "prop": {
+      "pivot": [
+        0.5,
+        0.06
+      ]
+    }
+  },
+  "characters": {
+    "A": {
+      "reference": {
+        "src": "/rig/A/reference.png",
+        "w": 89,
+        "h": 176
+      },
+      "head": {
+        "src": "/rig/A/head.png",
+        "w": 175,
+        "h": 174
+      },
+      "torso": {
+        "src": "/rig/A/torso.png",
+        "w": 161,
+        "h": 167
+      },
+      "upper_arm_l": {
+        "src": "/rig/A/upper_arm_l.png",
+        "w": 77,
+        "h": 118
+      },
+      "upper_arm_r": {
+        "src": "/rig/A/upper_arm_r.png",
+        "w": 76,
+        "h": 118
+      },
+      "forearm_l": {
+        "src": "/rig/A/forearm_l.png",
+        "w": 65,
+        "h": 138
+      },
+      "forearm_r": {
+        "src": "/rig/A/forearm_r.png",
+        "w": 64,
+        "h": 137
+      },
+      "thigh_l": {
+        "src": "/rig/A/thigh_l.png",
+        "w": 72,
+        "h": 122
+      },
+      "thigh_r": {
+        "src": "/rig/A/thigh_r.png",
+        "w": 72,
+        "h": 122
+      },
+      "lower_leg_l": {
+        "src": "/rig/A/lower_leg_l.png",
+        "w": 83,
+        "h": 158
+      },
+      "lower_leg_r": {
+        "src": "/rig/A/lower_leg_r.png",
+        "w": 96,
+        "h": 158
+      },
+      "mouth_closed": {
+        "src": "/rig/A/mouth_closed.png",
+        "w": 53,
+        "h": 13
+      },
+      "mouth_open": {
+        "src": "/rig/A/mouth_open.png",
+        "w": 44,
+        "h": 32
+      },
+      "mouth_wide": {
+        "src": "/rig/A/mouth_wide.png",
+        "w": 65,
+        "h": 47
+      },
+      "prop": {
+        "src": "/rig/A/prop.png",
+        "w": 160,
+        "h": 142
+      }
+    },
+    "B": {
+      "reference": {
+        "src": "/rig/B/reference.png",
+        "w": 90,
+        "h": 174
+      },
+      "head": {
+        "src": "/rig/B/head.png",
+        "w": 191,
+        "h": 171
+      },
+      "torso": {
+        "src": "/rig/B/torso.png",
+        "w": 163,
+        "h": 167
+      },
+      "upper_arm_l": {
+        "src": "/rig/B/upper_arm_l.png",
+        "w": 77,
+        "h": 118
+      },
+      "upper_arm_r": {
+        "src": "/rig/B/upper_arm_r.png",
+        "w": 77,
+        "h": 117
+      },
+      "forearm_l": {
+        "src": "/rig/B/forearm_l.png",
+        "w": 65,
+        "h": 140
+      },
+      "forearm_r": {
+        "src": "/rig/B/forearm_r.png",
+        "w": 64,
+        "h": 141
+      },
+      "thigh_l": {
+        "src": "/rig/B/thigh_l.png",
+        "w": 72,
+        "h": 121
+      },
+      "thigh_r": {
+        "src": "/rig/B/thigh_r.png",
+        "w": 72,
+        "h": 121
+      },
+      "lower_leg_l": {
+        "src": "/rig/B/lower_leg_l.png",
+        "w": 84,
+        "h": 160
+      },
+      "lower_leg_r": {
+        "src": "/rig/B/lower_leg_r.png",
+        "w": 85,
+        "h": 160
+      },
+      "mouth_closed": {
+        "src": "/rig/B/mouth_closed.png",
+        "w": 52,
+        "h": 12
+      },
+      "mouth_open": {
+        "src": "/rig/B/mouth_open.png",
+        "w": 44,
+        "h": 32
+      },
+      "mouth_wide": {
+        "src": "/rig/B/mouth_wide.png",
+        "w": 64,
+        "h": 48
+      },
+      "prop": {
+        "src": "/rig/B/prop.png",
+        "w": 94,
+        "h": 168
+      }
+    },
+    "C": {
+      "reference": {
+        "src": "/rig/C/reference.png",
+        "w": 87,
+        "h": 174
+      },
+      "head": {
+        "src": "/rig/C/head.png",
+        "w": 187,
+        "h": 169
+      },
+      "torso": {
+        "src": "/rig/C/torso.png",
+        "w": 186,
+        "h": 161
+      },
+      "upper_arm_l": {
+        "src": "/rig/C/upper_arm_l.png",
+        "w": 72,
+        "h": 87
+      },
+      "upper_arm_r": {
+        "src": "/rig/C/upper_arm_r.png",
+        "w": 72,
+        "h": 87
+      },
+      "forearm_l": {
+        "src": "/rig/C/forearm_l.png",
+        "w": 65,
+        "h": 136
+      },
+      "forearm_r": {
+        "src": "/rig/C/forearm_r.png",
+        "w": 64,
+        "h": 136
+      },
+      "thigh_l": {
+        "src": "/rig/C/thigh_l.png",
+        "w": 72,
+        "h": 122
+      },
+      "thigh_r": {
+        "src": "/rig/C/thigh_r.png",
+        "w": 72,
+        "h": 122
+      },
+      "lower_leg_l": {
+        "src": "/rig/C/lower_leg_l.png",
+        "w": 83,
+        "h": 152
+      },
+      "lower_leg_r": {
+        "src": "/rig/C/lower_leg_r.png",
+        "w": 84,
+        "h": 152
+      },
+      "mouth_closed": {
+        "src": "/rig/C/mouth_closed.png",
+        "w": 53,
+        "h": 12
+      },
+      "mouth_open": {
+        "src": "/rig/C/mouth_open.png",
+        "w": 44,
+        "h": 33
+      },
+      "mouth_wide": {
+        "src": "/rig/C/mouth_wide.png",
+        "w": 64,
+        "h": 47
+      },
+      "prop": {
+        "src": "/rig/C/prop.png",
+        "w": 163,
+        "h": 150
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "A": {
+    "name": "Sam",
+    "status": "unresolved",
+    "how": "was at the dry spot with no shelter built; caught in the open as the storm hit",
+    "survival": 0,
+    "goal": 0,
+    "total": 0,
+    "goal_met": false,
+    "goal_detail": "did not get off the island"
+  },
+  "B": {
+    "name": "Welsy",
+    "status": "unresolved",
+    "how": "was at the dry spot with no shelter built; caught in the open as the storm hit",
+    "survival": 0,
+    "goal": 0,
+    "total": 0,
+    "goal_met": false,
+    "goal_detail": "0/3 people and 0/2 bottles reached safety"
+  },
+  "C": {
+    "name": "Elizabeth",
+    "status": "unresolved",
+    "how": "was at the dry spot with no shelter built; caught in the open as the storm hit",
+    "survival": 0,
+    "goal": 0,
+    "total": 0,
+    "goal_met": false,
+    "goal_detail": "0/3 people survived"
+  }
+}

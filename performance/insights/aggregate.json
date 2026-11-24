@@ -1,0 +1,101 @@
+{
+  "generated": "2026-11-24T01:32:50.291Z",
+  "runs": [
+    {
+      "id": "run-01",
+      "mode": "legacy",
+      "seed": null,
+      "rules": "v1"
+    },
+    {
+      "id": "run-02",
+      "mode": "showcase",
+      "seed": 103,
+      "rules": "v2"
+    },
+    {
+      "id": "run-03",
+      "mode": "showcase",
+      "seed": 109,
+      "rules": "v2"
+    },
+    {
+      "id": "run-04",
+      "mode": "showcase",
+      "seed": 103,
+      "rules": "v2"
+    },
+    {
+      "id": "run-05",
+      "mode": "showcase",
+      "seed": 105,
+      "rules": "v2"
+    },
+    {
+      "id": "run-06",
+      "mode": "showcase",
+      "seed": 101,
+      "rules": "v2"
+    },
+    {
+      "id": "run-07",
+      "mode": "showcase",
+      "seed": 112,
+      "rules": "v2"
+    },
+    {
+      "id": "run-08",
+      "mode": "showcase",
+      "seed": 98213,
+      "rules": "v3"
+    },
+    {
+      "id": "run-09",
+      "mode": "showcase",
+      "seed": 25517,
+      "rules": "v3"
+    },
+    {
+      "id": "run-10",
+      "mode": "showcase",
+      "seed": 5690,
+      "rules": "v3"
+    },
+    {
+      "id": "run-11",
+      "mode": "showcase",
+      "seed": 6319,
+      "rules": "v3"
+    }
+  ],
+  "speaking": [
+    {
+      "agent": "Sam",
+      "runs": 11,
+      "turns_taken": 60,
+      "spoken_turns": 60,
+      "spoken_words": 1108,
+      "spoken_turns_per_run": 5.45,
+      "spoken_words_per_run": 100.7
+    },
+    {
+      "agent": "Elizabeth",
+      "runs": 11,
+      "turns_taken": 55,
+      "spoken_turns": 55,
+      "spoken_words": 1020,
+      "spoken_turns_per_run": 5,
+      "spoken_words_per_run": 92.7
+    },
+    {
+      "agent": "Welsy",
+      "runs": 11,
+      "turns_taken": 50,
+      "spoken_turns": 50,
+      "spoken_words": 952,
+      "spoken_turns_per_run": 4.55,
+      "spoken_words_per_run": 86.5
+    }
+  ],
+  "training": []
+}

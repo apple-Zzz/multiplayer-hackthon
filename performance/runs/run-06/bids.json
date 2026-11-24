@@ -1,0 +1,1318 @@
+[
+  {
+    "turn": 1,
+    "selected": "A",
+    "how": "highest urgency",
+    "scores": {
+      "A": 8,
+      "B": 6,
+      "C": 7
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=wreck|radio=unknown|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "investigate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "diagnose_radio"
+            },
+            "intent": "investigate",
+            "line": "I'll check the radio first. Welsy, Elizabeth, can you look at the water and my leg?"
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "I'll take a bottle. Elizabeth, take the other. Sam, try the radio. We need clean water at the dry spot."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "check_water"
+            },
+            "intent": "investigate",
+            "line": "Before anyone drinks, let me test this water with my kit."
+          },
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, let me look at that leg."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "selected": "A",
+    "how": "tie at 7 between Sam and Elizabeth: seeded random tie-break",
+    "scores": {
+      "A": 7,
+      "B": 6,
+      "C": 7
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=wreck|radio=fixable|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "repair_radio",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "repair_radio"
+            },
+            "intent": "repair_radio",
+            "line": "Good news: the radio's repairable. Solder joint and antenna lead. Give me a few minutes to fix it."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "I'll take a bottle. Elizabeth, check Sam's leg and the water. I'll get the shelter ready up the beach."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "check_water"
+            },
+            "intent": "investigate",
+            "line": "I'll test the water now, Sam. Then I'll look at your leg."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "selected": "A",
+    "how": "highest urgency",
+    "scores": {
+      "A": 8,
+      "B": 6,
+      "C": 7
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=wreck|radio=working|call=0|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "call_rescue",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "call_rescue"
+            },
+            "intent": "call_rescue",
+            "line": "Radio's powered up. Calling it in now. Stay close, I need everyone to hear this."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "I'm taking a bottle. Elizabeth, grab the other. Then we get Sam to the dry spot, where I can build shelter."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "check_water"
+            },
+            "intent": "investigate",
+            "line": "Sam asked us to check things. I'm testing the water now, then I'll look at your leg."
+          },
+          {
+            "action": {
+              "type": "assess_mobility"
+            },
+            "intent": "investigate",
+            "line": "Sam, let me look at that leg."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 4,
+    "selected": "B",
+    "how": "tie at 8 between Welsy and Elizabeth: seeded random tie-break",
+    "scores": {
+      "A": 7,
+      "B": 8,
+      "C": 8
+    },
+    "policy": {
+      "who": "B",
+      "key": "loc=wreck|radio=working|call=1|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "secure_water",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Welsy builds shelter at dry spot; Elizabeth tests water and checks my leg; two best placed commit at shoreline; whoever leaves sends help back."
+            },
+            "intent": "ask_help",
+            "line": "Boat's coming for two. Welsy, build the shelter. Elizabeth, check the water and my leg. We decide who boards together."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_1"
+            },
+            "intent": "secure_water",
+            "line": "Elizabeth, grab bottle 2. We each carry one, then get Sam to the dry spot. I'll build a shelter there."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "check_water"
+            },
+            "intent": "investigate",
+            "line": "Before anyone drinks, let me test this water with my kit."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 5,
+    "selected": "C",
+    "how": "highest urgency (with quiet bonus)",
+    "scores": {
+      "A": 6,
+      "B": 6,
+      "C": 8
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=wreck|radio=working|call=1|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "investigate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_2"
+            },
+            "intent": "secure_water",
+            "line": "Elizabeth, bottle 2 is still on the sand. Take it, or I will. Then check my leg, please. We need to move before the storm."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_2"
+            },
+            "intent": "secure_water",
+            "line": "I'll take bottle 2 so it isn't left behind. Elizabeth, check Sam's leg, then we move to the dry spot."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "check_water"
+            },
+            "intent": "investigate",
+            "line": "Before we carry these anywhere, let me test the water. Shelter only helps if it's clean."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 6,
+    "selected": "C",
+    "how": "highest urgency",
+    "scores": {
+      "A": 6,
+      "B": 6,
+      "C": 9
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=wreck|radio=working|call=1|water=contaminated|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "share_finding",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "take",
+              "item": "bottle_2"
+            },
+            "intent": "secure_water",
+            "line": "Elizabeth, what did your test show? I'll take bottle 2 so everyone has water. Then I'll try the leg."
+          },
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Share the water test result. Welsy builds shelter at the dry spot. Two of us commit at the shoreline, and whoever gets off sends help back."
+            },
+            "intent": "negotiate",
+            "line": "Elizabeth, is the water clean? Welsy, build the shelter. Two can board at the shoreline, and we send help back."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "C",
+              "terms": "Tell us the water test result, then take bottle 2 and come to the dry spot."
+            },
+            "intent": "ask_help",
+            "line": "Elizabeth, what did the test show? Take bottle 2 and tell us, then we move Sam to the dry spot."
+          },
+          {
+            "action": {
+              "type": "assist_a",
+              "to": "dry_spot"
+            },
+            "intent": "help_other",
+            "line": "Sam, lean on me. We're going to the dry spot."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 9,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Both bottles are contaminated; don't drink or rely on them. Shelter won't save anyone without clean water, so two should go to the shoreline for the boat."
+            },
+            "intent": "share_finding",
+            "line": "The water's contaminated, both bottles. Shelter without clean water won't save anyone. Two of us must make the shoreline for the boat."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 7,
+    "selected": "B",
+    "how": "tie at 8 between Sam and Welsy and Elizabeth: seeded random tie-break",
+    "scores": {
+      "A": 8,
+      "B": 8,
+      "C": 8
+    },
+    "policy": {
+      "who": "B",
+      "key": "loc=wreck|radio=working|call=1|water=unknown|shelter=0|bottle=1",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "negotiate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "help_other",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "move",
+              "to": "shoreline"
+            },
+            "intent": "move_to_safety",
+            "line": "The boat's coming, two places at the shoreline. I'm trying to walk there now. If my leg fails, I need a shoulder."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 6,
+              "answer": "accept",
+              "terms": "Sam and one more go to the shoreline; I'll help Sam walk there now."
+            },
+            "intent": "negotiate",
+            "line": "Elizabeth, I'll trust your test. No shelter without clean water. Sam, lean on me, we're going to the shoreline."
+          },
+          {
+            "action": {
+              "type": "assist_a",
+              "to": "shoreline"
+            },
+            "intent": "help_other",
+            "line": "Sam, lean on me. We're moving to the shoreline before the storm worsens."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "assist_a",
+              "to": "shoreline"
+            },
+            "intent": "help_other",
+            "line": "Sam, lean on me. We're going to the shoreline now. Welsy, the boat takes two, so decide quickly."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 8,
+    "selected": "B",
+    "how": "tie at 8 between Sam and Welsy: seeded random tie-break",
+    "scores": {
+      "A": 8,
+      "B": 8,
+      "C": 7
+    },
+    "policy": {
+      "who": "B",
+      "key": "loc=wreck|radio=working|call=1|water=unknown|shelter=0|bottle=1",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "help_other",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "move",
+              "to": "shoreline"
+            },
+            "intent": "move_to_safety",
+            "line": "Welsy, thanks. Let's go to the shoreline. I'll try the leg, so be ready to catch me."
+          },
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Whoever is rescued sends help back immediately for whoever remains."
+            },
+            "intent": "negotiate",
+            "line": "Whoever boards, we keep our deal: send help straight back for the one left behind."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "assist_a",
+              "to": "shoreline"
+            },
+            "intent": "help_other",
+            "line": "Sam, lean on me. Elizabeth, come with us to the shoreline. We decide the second place there."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "assist_a",
+              "to": "shoreline"
+            },
+            "intent": "help_other",
+            "line": "Sam, take my arm too. Let's get you to the shoreline, Welsy. We'll sort who boards when we're there."
+          },
+          {
+            "action": {
+              "type": "move",
+              "to": "shoreline"
+            },
+            "intent": "move_to_safety",
+            "line": "I'll go ahead to the shoreline."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 9,
+    "selected": "A",
+    "how": "highest urgency (with quiet bonus)",
+    "scores": {
+      "A": 8,
+      "B": 7,
+      "C": 6
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=shore|radio=working|call=1|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "commit_rescue",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "commit_to_boarding"
+            },
+            "intent": "commit_rescue",
+            "line": "Welsy, thanks for getting me here. I'm committing to board. I'll send help back for whoever's left. Elizabeth, come down."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "commit_to_boarding"
+            },
+            "intent": "commit_rescue",
+            "line": "Sam, you need that boat, commit too. I'm holding a place. Elizabeth, hurry. We settle the second place here."
+          },
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Sam takes one boat place. The second goes to whoever is at the shoreline. Whoever is rescued sends help back for the rest."
+            },
+            "intent": "negotiate",
+            "line": "Sam gets one place. The second goes to whoever's here. Whoever leaves sends help back for the rest."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "move",
+              "to": "shoreline"
+            },
+            "intent": "move_to_safety",
+            "line": "I'm coming to the shoreline. Sam's leg needs the boat most. Let's settle the two places together."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 10,
+    "selected": "C",
+    "how": "tie at 8 between Welsy and Elizabeth: seeded random tie-break",
+    "scores": {
+      "A": 6,
+      "B": 8,
+      "C": 8
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=wreck|radio=working|call=1|water=contaminated|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "move_to_safety",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Sam holds one boarding place. Welsy or Elizabeth takes the second by committing at the shoreline. I'll send help back for whoever is left."
+            },
+            "intent": "negotiate",
+            "line": "I'm committed. One place left: Welsy, Elizabeth, whoever gets here first commits. I'll send help back for the other."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "commit_to_boarding"
+            },
+            "intent": "commit_rescue",
+            "line": "Elizabeth, I'm committing so the boat has two. Come down now. We'll send help back for whoever's left."
+          },
+          {
+            "action": {
+              "type": "offer",
+              "to": "C",
+              "terms": "Come to the shoreline; if you want the place, we talk about it here."
+            },
+            "intent": "ask_help",
+            "line": "Elizabeth, come to the shoreline now. The boat takes two and the storm is almost here."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "move",
+              "to": "shoreline"
+            },
+            "intent": "move_to_safety",
+            "line": "Coming down now. Sam's set. Welsy, let's settle the second place together."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 11,
+    "selected": "B",
+    "how": "tie at 7 between Welsy and Elizabeth: seeded random tie-break",
+    "scores": {
+      "A": 6,
+      "B": 7,
+      "C": 7
+    },
+    "policy": {
+      "who": "B",
+      "key": "loc=shore|radio=working|call=1|water=unknown|shelter=0|bottle=1",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "negotiate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "commit_rescue",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Sam is committed to the boat. Whoever takes the second place, the other gets first help sent back, and I'll make that call the moment I'm ashore."
+            },
+            "intent": "negotiate",
+            "line": "I'm set for the boat. You two pick the second place. First thing ashore, I send help back for whoever stays."
+          },
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": ""
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "C",
+              "terms": "Elizabeth takes the second boat place with Sam, since he needs a nurse. Welsy stays and waits out the storm. Whoever gets off sends help back."
+            },
+            "intent": "negotiate",
+            "line": "Elizabeth, Sam needs you. You take the second place and commit. I'll stay and wait it out. Send help back for me."
+          },
+          {
+            "action": {
+              "type": "commit_to_boarding"
+            },
+            "intent": "commit_rescue",
+            "line": "If you won't take it, Elizabeth, I will. Say so now."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "commit_to_boarding"
+            },
+            "intent": "commit_rescue",
+            "line": "Welsy, you're the one best able to weather this outside. I'll take the second place and send the boat straight back for you."
+          },
+          {
+            "action": {
+              "type": "offer",
+              "to": "B",
+              "terms": "I'll board as second; I promise to send help straight back for you, Welsy."
+            },
+            "intent": "negotiate",
+            "line": "Welsy, I'll board second and send help straight back for you. Tell me if you object."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 12,
+    "selected": "C",
+    "how": "highest urgency",
+    "scores": {
+      "A": 6,
+      "B": 7,
+      "C": 8
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=shore|radio=working|call=1|water=contaminated|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "commit_rescue",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "negotiate",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "act",
+        "urgency": 6,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "offer",
+              "to": "all",
+              "terms": "Elizabeth takes the second boat place with Sam; Welsy stays. Whoever boards sends help back for Welsy first."
+            },
+            "intent": "negotiate",
+            "line": "Welsy, thank you. Elizabeth, commit to the second place. I swear I'll send help back for you first, Welsy."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "act",
+        "urgency": 7,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "negotiate",
+            "line": "Elizabeth, commit now before the storm worsens. Take the second place. Send help back for me."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 8,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "commit_to_boarding"
+            },
+            "intent": "commit_rescue",
+            "line": "Welsy, thank you. I accept and I'm committing. I'll send help back for you the moment we're off."
+          },
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 11,
+              "answer": "accept",
+              "terms": "I board with Sam and send help back for Welsy."
+            },
+            "intent": "negotiate",
+            "line": "I accept, Welsy. I'll go with Sam and send help straight back for you."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 13,
+    "selected": "C",
+    "how": "highest urgency",
+    "scores": {
+      "A": 3,
+      "B": 2,
+      "C": 5
+    },
+    "policy": {
+      "who": "C",
+      "key": "loc=shore|radio=working|call=1|water=contaminated|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "negotiate",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        },
+        {
+          "intent": "wait",
+          "rank": 1,
+          "prior": 0.3,
+          "q": 0,
+          "score": 0.3
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "defer",
+        "urgency": 2,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "Welsy, thank you. Stay high on the beach, away from the waves. We'll send help back the moment we're off."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "defer",
+        "urgency": 2,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "Go safe, both of you. Sam, Elizabeth, remember the promise: send help back for me the moment you're off."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "act",
+        "urgency": 5,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "respond",
+              "offer_turn": 11,
+              "answer": "accept",
+              "terms": "I board with Sam and send help back for Welsy immediately."
+            },
+            "intent": "negotiate",
+            "line": "Welsy, I accept formally. We'll send help back for you the moment we're off. Stay high and away from the waves."
+          },
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": ""
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 14,
+    "selected": "A",
+    "how": "everyone deferred: picked at random to react or wait",
+    "scores": {
+      "A": 3,
+      "B": 2,
+      "C": 2
+    },
+    "policy": {
+      "who": "A",
+      "key": "loc=shore|radio=working|call=1|water=unknown|shelter=0|bottle=0",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "wait",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "defer",
+        "urgency": 2,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "Welsy, we'll send help the moment we're off. Stay high, away from the waves. Thank you."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "defer",
+        "urgency": 2,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "You two board when the boat comes. Keep your promise: send help back for me. I'll hold on up the beach."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "defer",
+        "urgency": 2,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "Welsy, stay high and away from the waves. We'll send help the moment we're off."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  },
+  {
+    "turn": 15,
+    "selected": "B",
+    "how": "everyone deferred: picked at random to react or wait",
+    "scores": {
+      "A": 1,
+      "B": 2,
+      "C": 1
+    },
+    "policy": {
+      "who": "B",
+      "key": "loc=shore|radio=working|call=1|water=unknown|shelter=0|bottle=1",
+      "mode": "showcase",
+      "rows": [
+        {
+          "intent": "wait",
+          "rank": 0,
+          "prior": 0.6,
+          "q": 0,
+          "score": 0.6
+        }
+      ],
+      "chosen": 0,
+      "explored": false
+    },
+    "bids": {
+      "A": {
+        "want": "defer",
+        "urgency": 1,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "Welsy, hold on. We'll send help the moment we're off."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "B": {
+        "want": "defer",
+        "urgency": 1,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "Go safely, both of you. Remember your promise: send help back for me. I'll stay high."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      },
+      "C": {
+        "want": "defer",
+        "urgency": 1,
+        "bid_reason": "",
+        "candidates": [
+          {
+            "action": {
+              "type": "wait"
+            },
+            "intent": "wait",
+            "line": "Welsy, hold high and away from the waves. We'll send help the moment we're off."
+          }
+        ],
+        "rejected": [],
+        "error": null
+      }
+    }
+  }
+]

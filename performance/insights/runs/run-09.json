@@ -1,0 +1,116 @@
+{
+  "run_id": "run-09",
+  "mode": "showcase",
+  "speaking": [
+    {
+      "run_id": "run-09",
+      "agent": "Elizabeth",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 84
+    },
+    {
+      "run_id": "run-09",
+      "agent": "Sam",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 98
+    },
+    {
+      "run_id": "run-09",
+      "agent": "Welsy",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 103
+    }
+  ],
+  "most_spoken_by_turns": "Elizabeth",
+  "most_spoken_by_words": "Welsy",
+  "plan_changes": [
+    {
+      "run_id": "run-09",
+      "turn": 11,
+      "agent": "Elizabeth",
+      "previous_plan": "Assess Sam's leg, share the result, then decide who goes to the shoreline for the boat and who shelters with the water.",
+      "current_plan": "Share leg result. Sam and Welsy go to shoreline and commit. I take bottle 1 to the shelter and stay under the roof with clean water. Then confirm the pickup promise.",
+      "reason": "Sam can walk, so two can board the boat and one shelters with clean water. All three survive if this is carried out, and I can take the shelter spot.",
+      "prompted_by_turn": 10,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth kneels beside Sam, sets the first-aid kit down and carefully examines his injured leg.",
+      "prompt_line": "Sam, hold still. Let me check your leg now, before we move anyone.",
+      "resulting_stage_direction": "Elizabeth rises from beside Sam, the water bottle in one hand, and gestures toward the shoreline and then up the beach to the shelter."
+    },
+    {
+      "run_id": "run-09",
+      "turn": 13,
+      "agent": "Welsy",
+      "previous_plan": "Take bottle 2, then assist Sam to the dry spot; Elizabeth carries bottle 1 up. Settle boat places afterward.",
+      "current_plan": "Hand bottle 2 to Elizabeth, then move to shoreline next turn and commit to boarding; Elizabeth shelters with the water.",
+      "reason": "Elizabeth's plan is workable: Sam can walk, boat takes two, she shelters with the water; I should give her the second bottle then go.",
+      "prompted_by_turn": 11,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth rises from beside Sam, the water bottle in one hand, and gestures toward the shoreline and then up the beach to the shelter.",
+      "prompt_line": "Sam's leg is only bruised, he can walk! Sam and Welsy, board the boat. I'll shelter with the water. Send help back for me.",
+      "resulting_stage_direction": "Welsy holds bottle 2 out and presses it into Elizabeth's hands, then nods toward the shelter up the beach."
+    }
+  ],
+  "survival": [
+    {
+      "run_id": "run-09",
+      "mode": "showcase",
+      "seed": 25517,
+      "character_id": "A",
+      "character": "Sam",
+      "status": "rescued",
+      "status_label": "rescued",
+      "how": "boarded the patrol boat at the final pickup",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "got off the island alive",
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    },
+    {
+      "run_id": "run-09",
+      "mode": "showcase",
+      "seed": 25517,
+      "character_id": "B",
+      "character": "Welsy",
+      "status": "died",
+      "status_label": null,
+      "how": "was still at the wreckage, exposed, when the storm hit",
+      "survived": false,
+      "goal_met": false,
+      "goal_score": 0.233,
+      "goal_detail": "1/3 people and 0/2 bottles reached safety",
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    },
+    {
+      "run_id": "run-09",
+      "mode": "showcase",
+      "seed": 25517,
+      "character_id": "C",
+      "character": "Elizabeth",
+      "status": "died",
+      "status_label": null,
+      "how": "was at the dry spot but never sat under the shelter",
+      "survived": false,
+      "goal_met": false,
+      "goal_score": 0.333,
+      "goal_detail": "1/3 people survived",
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    }
+  ]
+}

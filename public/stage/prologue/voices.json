@@ -1,0 +1,34 @@
+{
+  "voices": {
+    "A": "Reed (English (US))",
+    "B": "Moira",
+    "C": "Karen"
+  },
+  "turns": {
+    "1": {
+      "file": "turn-01.m4a",
+      "actor": "A",
+      "duration": 5.152018
+    },
+    "2": {
+      "file": "turn-02.m4a",
+      "actor": "B",
+      "duration": 4.133197
+    },
+    "3": {
+      "file": "turn-03.m4a",
+      "actor": "C",
+      "duration": 6.037234
+    },
+    "4": {
+      "file": "turn-04.m4a",
+      "actor": "A",
+      "duration": 5.248027
+    },
+    "5": {
+      "file": "turn-05.m4a",
+      "actor": "B",
+      "duration": 2.252381
+    }
+  }
+}

@@ -1,0 +1,16 @@
+name: raw.rewards
+type: duckdb.seed
+description: Reinforcement-learning rewards per character per run; survival and goal progress kept as separate components.
+parameters:
+  path: ./rewards.csv
+columns:
+  - { name: run_id, type: varchar, checks: [{ name: not_null }] }
+  - { name: mode, type: varchar, checks: [{ name: accepted_values, value: ["baseline", "train", "learned", "showcase"] }] }
+  - { name: seed, type: integer }
+  - { name: character_id, type: varchar }
+  - { name: character, type: varchar }
+  - { name: survival_reward, type: double }
+  - { name: goal_reward, type: double }
+  - { name: total_reward, type: double }
+  - { name: policy_version, type: integer }
+  - { name: learning_updated, type: boolean }

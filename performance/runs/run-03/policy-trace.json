@@ -1,0 +1,355 @@
+[
+  {
+    "turn": 1,
+    "who": "C",
+    "key": "loc=wreck|radio=unknown|call=0|water=unknown|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "investigate",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "investigate",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      },
+      {
+        "intent": "investigate",
+        "rank": 2,
+        "prior": 0,
+        "q": 0,
+        "score": 0
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 2,
+    "who": "A",
+    "key": "loc=wreck|radio=unknown|call=0|water=unknown|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "investigate",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "wait",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 3,
+    "who": "A",
+    "key": "loc=wreck|radio=fixable|call=0|water=unknown|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "repair_radio",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "wait",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 4,
+    "who": "B",
+    "key": "loc=wreck|radio=working|call=0|water=unknown|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "call_rescue",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "move_to_safety",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 5,
+    "who": "C",
+    "key": "loc=wreck|radio=working|call=1|water=clean|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "investigate",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "negotiate",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 6,
+    "who": "C",
+    "key": "loc=wreck|radio=working|call=1|water=clean|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "help_other",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "negotiate",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 7,
+    "who": "A",
+    "key": "loc=shore|radio=working|call=1|water=unknown|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "commit_rescue",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "negotiate",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 8,
+    "who": "C",
+    "key": "loc=shore|radio=working|call=1|water=clean|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "commit_rescue",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "ask_help",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 9,
+    "who": "B",
+    "key": "loc=wreck|radio=working|call=1|water=unknown|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "secure_water",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "move_to_safety",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 10,
+    "who": "C",
+    "key": "loc=shore|radio=working|call=1|water=clean|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "negotiate",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "wait",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 11,
+    "who": "C",
+    "key": "loc=shore|radio=working|call=1|water=clean|shelter=0|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "ask_help",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 12,
+    "who": "B",
+    "key": "loc=wreck|radio=working|call=1|water=unknown|shelter=0|bottle=1",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "move_to_safety",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "negotiate",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 13,
+    "who": "B",
+    "key": "loc=dry|radio=working|call=1|water=unknown|shelter=0|bottle=1",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "build_shelter",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "negotiate",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 14,
+    "who": "B",
+    "key": "loc=dry|radio=working|call=1|water=unknown|shelter=1|bottle=1",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "wait",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  },
+  {
+    "turn": 15,
+    "who": "A",
+    "key": "loc=shore|radio=working|call=1|water=unknown|shelter=1|bottle=0",
+    "mode": "showcase",
+    "rows": [
+      {
+        "intent": "wait",
+        "rank": 0,
+        "prior": 0.6,
+        "q": 0,
+        "score": 0.6
+      },
+      {
+        "intent": "negotiate",
+        "rank": 1,
+        "prior": 0.3,
+        "q": 0,
+        "score": 0.3
+      }
+    ],
+    "chosen": 0,
+    "explored": false
+  }
+]

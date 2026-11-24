@@ -1,0 +1,1044 @@
+{
+  "run_id": "run-08",
+  "rules": "v3",
+  "names": {
+    "A": "Sam",
+    "B": "Welsy",
+    "C": "Elizabeth"
+  },
+  "meta": {
+    "mode": "showcase",
+    "seed": 98213,
+    "model": "sonnet",
+    "policy_version": 0,
+    "policy_version_after": 0,
+    "hidden": {
+      "mobility": "needs_help",
+      "radio": "beyond_repair",
+      "water": "clean"
+    },
+    "started": "2026-11-24T01:30:08.390Z",
+    "finished": "2026-11-24T01:31:46.827Z",
+    "cost_usd": 0.6923,
+    "rules": "v2"
+  },
+  "hidden": {
+    "mobility": "needs_help",
+    "radio": "beyond_repair",
+    "water": "clean"
+  },
+  "order": [],
+  "turns": [
+    {
+      "turn": 1,
+      "actor": "A",
+      "agent": "Sam",
+      "storm": 1,
+      "action": "diagnose_radio",
+      "target": "radio",
+      "intent": "investigate",
+      "speaker": "A",
+      "speaker_name": "Sam",
+      "spoken_line": "Let me look at the radio first. If it's fixable, that's our way off. Welsy, Elizabeth, hang tight.",
+      "stage_direction": "Sam crouches stiffly by the wreckage, opens his toolkit and starts examining the radio's casing and wiring.",
+      "gesture": "work",
+      "visible_action": "Sam opened the radio casing with the toolkit and studied the circuitry.",
+      "state_change": "Sam privately learned the radio is broken beyond repair.",
+      "private_result": "Diagnosis: the radio is BROKEN BEYOND REPAIR (the transmitter board is burnt through). No distress call is possible, so no boat can come.",
+      "previous_plan": null,
+      "current_plan": "Diagnose radio, then repair and call rescue if possible. Share findings. Coordinate shelter with Welsy and water check.",
+      "plan_changed": false,
+      "influenced_by_turn": null,
+      "reason": "Knowing whether the radio can work determines the whole strategy; I'm the only one who can fix it.",
+      "event": {
+        "type": "diagnose_radio",
+        "from": "wreckage",
+        "to": "wreckage",
+        "item": null,
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "wreckage",
+          "B": "wreckage",
+          "C": "wreckage"
+        },
+        "holdings": {
+          "A": [
+            "toolkit"
+          ],
+          "B": [
+            "rope"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [
+            "bottle_1",
+            "bottle_2"
+          ],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 2,
+      "actor": "A",
+      "agent": "Sam",
+      "storm": 1,
+      "action": "offer",
+      "target": "all",
+      "intent": "share_finding",
+      "speaker": "A",
+      "speaker_name": "Sam",
+      "spoken_line": "The radio's burnt through, it can't be fixed. No boat. Shelter is our only chance, Welsy. Bring the bottles up the beach.",
+      "stage_direction": "Sam closes the radio casing and sets down his screwdriver, shaking his head. He looks to Welsy and Elizabeth and points up the beach toward the dry spot.",
+      "gesture": "point",
+      "visible_action": "Sam made an offer to everyone: \"Radio is dead, no boat. Welsy builds shelter at the dry spot; we carry both bottles there and Elizabeth checks water and my leg.\"",
+      "state_change": "Open offer (Sam → everyone). Nothing has changed hands.",
+      "private_result": null,
+      "previous_plan": "Diagnose radio, then repair and call rescue if possible. Share findings. Coordinate shelter with Welsy and water check.",
+      "current_plan": "Tell them radio is dead, push shelter at dry spot with both bottles carried there; get Elizabeth to assess my leg and try moving to dry spot.",
+      "plan_changed": true,
+      "influenced_by_turn": 1,
+      "reason": "Diagnosis showed the radio is unrepairable, so survival depends on shelter and clean water; honest sharing helps coordination.",
+      "event": {
+        "type": "offer",
+        "from": "wreckage",
+        "to": "wreckage",
+        "item": null,
+        "recipient": "all",
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "wreckage",
+          "B": "wreckage",
+          "C": "wreckage"
+        },
+        "holdings": {
+          "A": [
+            "toolkit"
+          ],
+          "B": [
+            "rope"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [
+            "bottle_1",
+            "bottle_2"
+          ],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 3,
+      "actor": "C",
+      "agent": "Elizabeth",
+      "storm": 1,
+      "action": "inspect_radio",
+      "target": "radio",
+      "intent": "investigate",
+      "speaker": "C",
+      "speaker_name": "Elizabeth",
+      "spoken_line": "Sam, I'd like to see the radio myself before we give up on it. One quick look.",
+      "stage_direction": "Elizabeth kneels beside the opened radio casing and looks over the burnt circuitry carefully.",
+      "gesture": "examine",
+      "visible_action": "Elizabeth looked over the radio.",
+      "state_change": "Elizabeth privately checked the radio: dead.",
+      "private_result": "The radio is dead: no power, no light.",
+      "previous_plan": null,
+      "current_plan": "Verify the radio myself, then check water and Sam's leg, and share the findings with the group.",
+      "plan_changed": false,
+      "influenced_by_turn": 2,
+      "reason": "Sam's claim that the radio is dead is unconfirmed, and a working radio means rescue for two people. It is worth a single turn to check.",
+      "event": {
+        "type": "inspect_radio",
+        "from": "wreckage",
+        "to": "wreckage",
+        "item": null,
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "wreckage",
+          "B": "wreckage",
+          "C": "wreckage"
+        },
+        "holdings": {
+          "A": [
+            "toolkit"
+          ],
+          "B": [
+            "rope"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [
+            "bottle_1",
+            "bottle_2"
+          ],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 4,
+      "actor": "B",
+      "agent": "Welsy",
+      "storm": 2,
+      "action": "take",
+      "target": "bottle_1",
+      "intent": "secure_water",
+      "speaker": "B",
+      "speaker_name": "Welsy",
+      "spoken_line": "Elizabeth, check the radio fast. I'm taking a bottle up the beach to build the shelter. Sam, Elizabeth, bring the other.",
+      "stage_direction": "Welsy crouches, picks up water bottle 1 and tucks it under her arm, glancing at the darkening sky and then at the others.",
+      "gesture": "pickup",
+      "visible_action": "Welsy picked up water bottle 1.",
+      "state_change": "Welsy now holds water bottle 1.",
+      "private_result": null,
+      "previous_plan": null,
+      "current_plan": "Carry bottles to dry spot, build shelter with rope, get everyone under it. Let Elizabeth verify radio meanwhile; Sam's claim is unconfirmed.",
+      "plan_changed": false,
+      "influenced_by_turn": 3,
+      "reason": "Time is limited and the shelter is my unique contribution; I need water at the dry spot, and Elizabeth is already checking the radio.",
+      "event": {
+        "type": "take",
+        "from": "wreckage",
+        "to": "wreckage",
+        "item": "bottle_1",
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "wreckage",
+          "B": "wreckage",
+          "C": "wreckage"
+        },
+        "holdings": {
+          "A": [
+            "toolkit"
+          ],
+          "B": [
+            "rope",
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [
+            "bottle_2"
+          ],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 5,
+      "actor": "A",
+      "agent": "Sam",
+      "storm": 2,
+      "action": "take",
+      "target": "bottle_2",
+      "intent": "secure_water",
+      "speaker": "A",
+      "speaker_name": "Sam",
+      "spoken_line": "Elizabeth, the radio's dead, I checked twice. Let's go. I'm taking bottle 2 up the beach to the shelter.",
+      "stage_direction": "Sam picks up the second bottle from the sand and tucks it against his chest. He glances at Elizabeth and nods toward the dry spot.",
+      "gesture": "pickup",
+      "visible_action": "Sam picked up water bottle 2.",
+      "state_change": "Sam now holds water bottle 2.",
+      "private_result": null,
+      "previous_plan": "Tell them radio is dead, push shelter at dry spot with both bottles carried there; get Elizabeth to assess my leg and try moving to dry spot.",
+      "current_plan": "Carry bottle 2 to dry spot, try to walk (reveals leg), get Elizabeth to check water and leg, shelter with all.",
+      "plan_changed": false,
+      "influenced_by_turn": 4,
+      "reason": "Welsy is already heading to build shelter; the second bottle must reach the dry spot and shelter is the only way to survive.",
+      "event": {
+        "type": "take",
+        "from": "wreckage",
+        "to": "wreckage",
+        "item": "bottle_2",
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "wreckage",
+          "B": "wreckage",
+          "C": "wreckage"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "rope",
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "tie-break"
+    },
+    {
+      "turn": 6,
+      "actor": "C",
+      "agent": "Elizabeth",
+      "storm": 2,
+      "action": "check_water",
+      "target": "water",
+      "intent": "investigate",
+      "speaker": "C",
+      "speaker_name": "Elizabeth",
+      "spoken_line": "You're right, the radio's dead. Before we haul bottles up, let me test the water. It matters for the shelter.",
+      "stage_direction": "Elizabeth opens her first-aid kit and takes out a test strip. She steps toward Sam's bottle to test it.",
+      "gesture": "hold_up",
+      "visible_action": "Elizabeth opened a water bottle and tested it with a strip from the first-aid kit.",
+      "state_change": "Elizabeth privately learned the water is clean.",
+      "private_result": "Water test: CLEAN. Both bottles are safe to drink.",
+      "previous_plan": "Verify the radio myself, then check water and Sam's leg, and share the findings with the group.",
+      "current_plan": "Test water, then assess Sam's leg, then go to the dry spot and share results.",
+      "plan_changed": true,
+      "influenced_by_turn": 5,
+      "reason": "The radio is confirmed dead, so shelter with clean water is the only way to survive. Water safety decides it.",
+      "event": {
+        "type": "check_water",
+        "from": "wreckage",
+        "to": "wreckage",
+        "item": null,
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "wreckage",
+          "B": "wreckage",
+          "C": "wreckage"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "rope",
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "tie-break"
+    },
+    {
+      "turn": 7,
+      "actor": "C",
+      "agent": "Elizabeth",
+      "storm": 3,
+      "action": "assist_a",
+      "target": "dry_spot",
+      "intent": "help_other",
+      "speaker": "C",
+      "speaker_name": "Elizabeth",
+      "spoken_line": "Water's clean, both bottles. Welsy, build the shelter. Sam, lean on me, I'll help you up the beach.",
+      "stage_direction": "Elizabeth holds up the test strip, then slips an arm under Sam's shoulder and starts helping him toward the dry spot.",
+      "gesture": "none",
+      "visible_action": "Elizabeth got Sam up and helped him over to the dry spot up the beach.",
+      "state_change": "Elizabeth and Sam: wreckage → dry_spot.",
+      "private_result": null,
+      "previous_plan": "Test water, then assess Sam's leg, then go to the dry spot and share results.",
+      "current_plan": "Help Sam to the dry spot, then take shelter once Welsy builds it. Keep the bottles with us.",
+      "plan_changed": true,
+      "influenced_by_turn": 6,
+      "reason": "Radio is dead and water is clean, so the shelter is the only way to survive. Sharing the result gets everyone moving.",
+      "event": {
+        "type": "assist_a",
+        "from": "wreckage",
+        "to": "dry_spot",
+        "item": null,
+        "recipient": null,
+        "assisted": "A",
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "dry_spot",
+          "B": "wreckage",
+          "C": "dry_spot"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "rope",
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 8,
+      "actor": "A",
+      "agent": "Sam",
+      "storm": 3,
+      "action": "offer",
+      "target": "B",
+      "intent": "ask_help",
+      "speaker": "A",
+      "speaker_name": "Sam",
+      "spoken_line": "Welsy, water's clean and bottle 2 is here. Bring your rope up and build the shelter, the storm's coming!",
+      "stage_direction": "Sam lowers himself beside Elizabeth, cradling the bottle, and waves Welsy toward the dry spot.",
+      "gesture": "point",
+      "visible_action": "Sam made an offer to Welsy: \"Welsy, come to the dry spot and build the shelter now. Clean bottle 2 is already here; bring bottle 1 too.\"",
+      "state_change": "Open offer (Sam → Welsy). Nothing has changed hands.",
+      "private_result": null,
+      "previous_plan": "Carry bottle 2 to dry spot, try to walk (reveals leg), get Elizabeth to check water and leg, shelter with all.",
+      "current_plan": "Get Welsy to build shelter at the dry spot, then take_shelter with Elizabeth and keep bottle 2 here.",
+      "plan_changed": false,
+      "influenced_by_turn": 7,
+      "reason": "Water is confirmed clean and only Welsy can build the shelter; the radio is dead, so shelter is the only survival route.",
+      "event": {
+        "type": "offer",
+        "from": "dry_spot",
+        "to": "dry_spot",
+        "item": null,
+        "recipient": "B",
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "dry_spot",
+          "B": "wreckage",
+          "C": "dry_spot"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "rope",
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 9,
+      "actor": "C",
+      "agent": "Elizabeth",
+      "storm": 3,
+      "action": "offer",
+      "target": "B",
+      "intent": "ask_help",
+      "speaker": "C",
+      "speaker_name": "Elizabeth",
+      "spoken_line": "Welsy, both bottles are clean, I tested them. Bring the rope and bottle 1 up here and build the shelter, please!",
+      "stage_direction": "Elizabeth cups her hands to her mouth and calls down the beach, one arm waving Welsy toward the dry spot while Sam rests beside her.",
+      "gesture": "open_arms",
+      "visible_action": "Elizabeth made an offer to Welsy: \"Bring rope and bottle 1 to the dry spot and build the shelter now. Both bottles are clean. Sam and I are waiting here.\"",
+      "state_change": "Open offer (Elizabeth → Welsy). Nothing has changed hands.",
+      "private_result": null,
+      "previous_plan": "Help Sam to the dry spot, then take shelter once Welsy builds it. Keep the bottles with us.",
+      "current_plan": "Get Welsy to the dry spot with the rope and bottle 1. She builds the shelter, then Sam and I take shelter with both clean bottles.",
+      "plan_changed": false,
+      "influenced_by_turn": 8,
+      "reason": "The radio is confirmed dead, so shelter is the only way to survive. Welsy is still at the wreckage and must come build it.",
+      "event": {
+        "type": "offer",
+        "from": "dry_spot",
+        "to": "dry_spot",
+        "item": null,
+        "recipient": "B",
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "dry_spot",
+          "B": "wreckage",
+          "C": "dry_spot"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "rope",
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "tie-break"
+    },
+    {
+      "turn": 10,
+      "actor": "B",
+      "agent": "Welsy",
+      "storm": 4,
+      "action": "inspect_radio",
+      "target": "radio",
+      "intent": "investigate",
+      "speaker": "B",
+      "speaker_name": "Welsy",
+      "spoken_line": "I'm right here at the radio. One quick look, then I'm bringing the rope up.",
+      "stage_direction": "Welsy crouches beside the open radio casing, rain streaming off her jacket, and examines the circuitry quickly. She keeps the bottle and rope tight against her.",
+      "gesture": "examine",
+      "visible_action": "Welsy looked over the radio.",
+      "state_change": "Welsy privately checked the radio: dead.",
+      "private_result": "The radio is dead: no power, no light.",
+      "previous_plan": "Carry bottles to dry spot, build shelter with rope, get everyone under it. Let Elizabeth verify radio meanwhile; Sam's claim is unconfirmed.",
+      "current_plan": "Check radio now (cheap, I'm here). Then move to dry spot with rope and bottle 1, build shelter, take shelter. If radio works, call rescue first.",
+      "plan_changed": false,
+      "influenced_by_turn": null,
+      "reason": "Only I am at the wreckage and the radio claim is unverified; I have a spare turn before the shelter must be built.",
+      "event": {
+        "type": "inspect_radio",
+        "from": "wreckage",
+        "to": "wreckage",
+        "item": null,
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "dry_spot",
+          "B": "wreckage",
+          "C": "dry_spot"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "rope",
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 11,
+      "actor": "B",
+      "agent": "Welsy",
+      "storm": 4,
+      "action": "move",
+      "target": "dry_spot",
+      "intent": "move_to_safety",
+      "speaker": "B",
+      "speaker_name": "Welsy",
+      "spoken_line": "Radio's dead, you were right. I'm coming up with the rope and bottle 1. Shelter next.",
+      "stage_direction": "Welsy turns from the wreckage, tucks the rope over her shoulder, grips the bottle, and pushes up the beach through the rain.",
+      "gesture": "none",
+      "visible_action": "Welsy walked from the wreckage to the dry spot up the beach.",
+      "state_change": "Welsy: wreckage → dry_spot.",
+      "private_result": null,
+      "previous_plan": "Check radio now (cheap, I'm here). Then move to dry spot with rope and bottle 1, build shelter, take shelter. If radio works, call rescue first.",
+      "current_plan": "Move to dry spot, build shelter next turn, then take_shelter. Everyone shelters with both clean bottles.",
+      "plan_changed": false,
+      "influenced_by_turn": 10,
+      "reason": "Radio confirmed dead; shelter is the only way to survive, and I must carry rope and bottle 1 there.",
+      "event": {
+        "type": "move",
+        "from": "wreckage",
+        "to": "dry_spot",
+        "item": null,
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "dry_spot",
+          "B": "dry_spot",
+          "C": "dry_spot"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "rope",
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": false,
+        "sheltering": []
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 12,
+      "actor": "B",
+      "agent": "Welsy",
+      "storm": 4,
+      "action": "build_shelter",
+      "target": "shelter",
+      "intent": "build_shelter",
+      "speaker": "B",
+      "speaker_name": "Welsy",
+      "spoken_line": "Sam, Elizabeth, stay close. I'm lashing the shelter now, then everyone get under it.",
+      "stage_direction": "Welsy kneels in the driving rain, gathers driftwood and lashes it together with her rope into a low roofed shelter.",
+      "gesture": "build",
+      "visible_action": "Welsy gathered driftwood and plane debris from the beach and lashed them together with her rope into a wooden storm shelter at the dry spot.",
+      "state_change": "Shelter built at the dry spot; the rope is now part of it.",
+      "private_result": null,
+      "previous_plan": "Move to dry spot, build shelter next turn, then take_shelter. Everyone shelters with both clean bottles.",
+      "current_plan": "Build shelter now, then take_shelter next turn with bottle 1, and urge Sam and Elizabeth to do the same.",
+      "plan_changed": false,
+      "influenced_by_turn": 11,
+      "reason": "All three are at the dry spot with both clean bottles. Building the shelter is the critical step.",
+      "event": {
+        "type": "build_shelter",
+        "from": "dry_spot",
+        "to": "dry_spot",
+        "item": null,
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "dry_spot",
+          "B": "dry_spot",
+          "C": "dry_spot"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": true,
+        "sheltering": []
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 13,
+      "actor": "C",
+      "agent": "Elizabeth",
+      "storm": 5,
+      "action": "take_shelter",
+      "target": "shelter",
+      "intent": "move_to_safety",
+      "speaker": "C",
+      "speaker_name": "Elizabeth",
+      "spoken_line": "Shelter's up and both bottles are clean. Sam, Welsy, get under the roof now, stay together.",
+      "stage_direction": "Elizabeth ducks under the lashed roof and sits down, motioning Sam and Welsy to join her.",
+      "gesture": "none",
+      "visible_action": "Elizabeth sat down under the shelter roof.",
+      "state_change": "Elizabeth is sheltering (Elizabeth under the roof).",
+      "private_result": null,
+      "previous_plan": "Get Welsy to the dry spot with the rope and bottle 1. She builds the shelter, then Sam and I take shelter with both clean bottles.",
+      "current_plan": "Take shelter now; keep both clean bottles at the dry spot; make sure Sam and Welsy also take shelter.",
+      "plan_changed": false,
+      "influenced_by_turn": 12,
+      "reason": "Shelter is complete, both bottles are clean and at the dry spot, so sheltering saves everyone.",
+      "event": {
+        "type": "take_shelter",
+        "from": "dry_spot",
+        "to": "dry_spot",
+        "item": null,
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "dry_spot",
+          "B": "dry_spot",
+          "C": "dry_spot"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": true,
+        "sheltering": [
+          "C"
+        ]
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 14,
+      "actor": "A",
+      "agent": "Sam",
+      "storm": 5,
+      "action": "take_shelter",
+      "target": "shelter",
+      "intent": "move_to_safety",
+      "speaker": "A",
+      "speaker_name": "Sam",
+      "spoken_line": "Shelter's up, water's clean. I'm getting under the roof now. Welsy, join us, stay together.",
+      "stage_direction": "Sam limps under the shelter roof and sits down, keeping bottle 2 close beside him. He waves Welsy in.",
+      "gesture": "none",
+      "visible_action": "Sam sat down under the shelter roof.",
+      "state_change": "Sam is sheltering (Elizabeth, Sam under the roof).",
+      "private_result": null,
+      "previous_plan": "Get Welsy to build shelter at the dry spot, then take_shelter with Elizabeth and keep bottle 2 here.",
+      "current_plan": "Sit under shelter with bottle 2 and wait out the storm.",
+      "plan_changed": false,
+      "influenced_by_turn": 13,
+      "reason": "Shelter is complete, water is clean, and I'm at the dry spot; taking shelter is the only way to survive.",
+      "event": {
+        "type": "take_shelter",
+        "from": "dry_spot",
+        "to": "dry_spot",
+        "item": null,
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "dry_spot",
+          "B": "dry_spot",
+          "C": "dry_spot"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": true,
+        "sheltering": [
+          "C",
+          "A"
+        ]
+      },
+      "selected_by": "urgency"
+    },
+    {
+      "turn": 15,
+      "actor": "B",
+      "agent": "Welsy",
+      "storm": 5,
+      "action": "take_shelter",
+      "target": "shelter",
+      "intent": "move_to_safety",
+      "speaker": "B",
+      "speaker_name": "Welsy",
+      "spoken_line": "Getting under the roof now. We all stay together with both clean bottles.",
+      "stage_direction": "Welsy ducks under the lashed roof and sits down beside Sam and Elizabeth, bottle 1 held close.",
+      "gesture": "none",
+      "visible_action": "Welsy sat down under the shelter roof.",
+      "state_change": "Welsy is sheltering (Elizabeth, Sam, Welsy under the roof).",
+      "private_result": null,
+      "previous_plan": "Build shelter now, then take_shelter next turn with bottle 1, and urge Sam and Elizabeth to do the same.",
+      "current_plan": "Take shelter now with bottle 1; this is the last turn.",
+      "plan_changed": false,
+      "influenced_by_turn": 14,
+      "reason": "Final turn: sitting under the shelter is the only way I survive.",
+      "event": {
+        "type": "take_shelter",
+        "from": "dry_spot",
+        "to": "dry_spot",
+        "item": null,
+        "recipient": null,
+        "assisted": null,
+        "attempt": null
+      },
+      "snapshot": {
+        "positions": {
+          "A": "dry_spot",
+          "B": "dry_spot",
+          "C": "dry_spot"
+        },
+        "holdings": {
+          "A": [
+            "toolkit",
+            "bottle_2"
+          ],
+          "B": [
+            "bottle_1"
+          ],
+          "C": [
+            "first_aid_kit"
+          ]
+        },
+        "ground": {
+          "wreckage": [],
+          "shoreline": [],
+          "dry_spot": []
+        },
+        "commits": [],
+        "radioWorking": false,
+        "callConfirmed": false,
+        "shelterBuilt": true,
+        "sheltering": [
+          "C",
+          "A",
+          "B"
+        ]
+      },
+      "selected_by": "urgency"
+    }
+  ],
+  "ending": {
+    "rules": "v3",
+    "conditions": {
+      "radio": "broken",
+      "leg": "fractured",
+      "water": "clean"
+    },
+    "hidden": {
+      "mobility": "needs_help",
+      "radio": "beyond_repair",
+      "water": "clean"
+    },
+    "rescued": [],
+    "sheltered": [
+      "A",
+      "B",
+      "C"
+    ],
+    "status": {
+      "A": "sheltered_survived",
+      "B": "sheltered_survived",
+      "C": "sheltered_survived"
+    },
+    "how": {
+      "A": "waited out the storm under Welsy's shelter, sharing 2 clean bottles",
+      "B": "waited out the storm under Welsy's shelter, sharing 2 clean bottles",
+      "C": "waited out the storm under Welsy's shelter, sharing 2 clean bottles"
+    },
+    "goal": {
+      "A": {
+        "score": 0,
+        "met": false,
+        "detail": "did not get off the island"
+      },
+      "B": {
+        "score": 1,
+        "met": true,
+        "detail": "3/3 people and 2/2 bottles reached safety"
+      },
+      "C": {
+        "score": 1,
+        "met": true,
+        "detail": "3/3 people survived"
+      }
+    },
+    "reward": {
+      "A": {
+        "survival": 1,
+        "goal": 0,
+        "total": 1
+      },
+      "B": {
+        "survival": 1,
+        "goal": 1,
+        "total": 2
+      },
+      "C": {
+        "survival": 1,
+        "goal": 1,
+        "total": 2
+      }
+    },
+    "outcome": {
+      "A": "sheltered and survived: waited out the storm under Welsy's shelter, sharing 2 clean bottles",
+      "B": "sheltered and survived: waited out the storm under Welsy's shelter, sharing 2 clean bottles",
+      "C": "sheltered and survived: waited out the storm under Welsy's shelter, sharing 2 clean bottles"
+    },
+    "boatArrives": false,
+    "shelterBuilt": true,
+    "finalCue": "thunder",
+    "finalBeat": "No boat is coming. The storm breaks over the beach."
+  }
+}

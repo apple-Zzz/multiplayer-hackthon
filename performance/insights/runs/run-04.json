@@ -1,0 +1,103 @@
+{
+  "run_id": "run-04",
+  "mode": "showcase",
+  "speaking": [
+    {
+      "run_id": "run-04",
+      "agent": "Elizabeth",
+      "turns_taken": 6,
+      "spoken_turns": 6,
+      "spoken_words": 105
+    },
+    {
+      "run_id": "run-04",
+      "agent": "Sam",
+      "turns_taken": 6,
+      "spoken_turns": 6,
+      "spoken_words": 99
+    },
+    {
+      "run_id": "run-04",
+      "agent": "Welsy",
+      "turns_taken": 3,
+      "spoken_turns": 3,
+      "spoken_words": 56
+    }
+  ],
+  "most_spoken_by_turns": "Elizabeth",
+  "most_spoken_by_words": "Elizabeth",
+  "plan_changes": [
+    {
+      "run_id": "run-04",
+      "turn": 12,
+      "agent": "Elizabeth",
+      "previous_plan": "Assess Sam's leg, then share result; decide who goes to shoreline (two boat places) and Welsy builds shelter with bottle.",
+      "current_plan": "Go to shoreline, commit to boarding with Sam; Welsy stays sheltered with clean bottle. Send help back after rescue.",
+      "reason": "Shelter is built and Welsy has clean water; the two boat places go to Sam and me, so all three can survive.",
+      "prompted_by_turn": 11,
+      "prompted_by_agent": "Welsy",
+      "prompt_stage_direction": "Welsy gathers driftwood at the dry spot and lashes it together with her rope, working fast against the wind.",
+      "prompt_line": "Building the shelter now. Elizabeth, Sam, boat places are yours. I'll hold the shelter with my clean bottle.",
+      "resulting_stage_direction": "Elizabeth tucks the first-aid kit under her arm, clutches the bottle, and heads through the rain toward the shoreline."
+    }
+  ],
+  "survival": [
+    {
+      "run_id": "run-04",
+      "mode": "showcase",
+      "seed": 103,
+      "character_id": "A",
+      "character": "Sam",
+      "status": "rescued",
+      "status_label": "rescued",
+      "how": "boarded the patrol boat at the final pickup",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "got off the island alive",
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    },
+    {
+      "run_id": "run-04",
+      "mode": "showcase",
+      "seed": 103,
+      "character_id": "B",
+      "character": "Welsy",
+      "status": "sheltered_survived",
+      "status_label": "sheltered and survived",
+      "how": "waited out the storm in Welsy's shelter with a clean bottle",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "3/3 people and 2/2 bottles reached safety",
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    },
+    {
+      "run_id": "run-04",
+      "mode": "showcase",
+      "seed": 103,
+      "character_id": "C",
+      "character": "Elizabeth",
+      "status": "rescued",
+      "status_label": "rescued",
+      "how": "boarded the patrol boat at the final pickup",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "3/3 people survived",
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    }
+  ]
+}

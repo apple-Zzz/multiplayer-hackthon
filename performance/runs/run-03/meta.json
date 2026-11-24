@@ -1,0 +1,17 @@
+{
+  "run_id": "run-03",
+  "mode": "showcase",
+  "seed": 109,
+  "model": "haiku",
+  "policy_version": 0,
+  "policy_version_after": 0,
+  "hidden": {
+    "mobility": "needs_help",
+    "radio": "repairable",
+    "water": "clean"
+  },
+  "started": "2026-11-24T00:19:45.992Z",
+  "finished": "2026-11-24T00:22:17.702Z",
+  "cost_usd": 0.0735,
+  "rules": "v2"
+}

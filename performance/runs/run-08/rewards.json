@@ -1,0 +1,32 @@
+{
+  "A": {
+    "name": "Sam",
+    "status": "sheltered_survived",
+    "how": "waited out the storm under Welsy's shelter, sharing 2 clean bottles",
+    "survival": 1,
+    "goal": 0,
+    "total": 1,
+    "goal_met": false,
+    "goal_detail": "did not get off the island"
+  },
+  "B": {
+    "name": "Welsy",
+    "status": "sheltered_survived",
+    "how": "waited out the storm under Welsy's shelter, sharing 2 clean bottles",
+    "survival": 1,
+    "goal": 1,
+    "total": 2,
+    "goal_met": true,
+    "goal_detail": "3/3 people and 2/2 bottles reached safety"
+  },
+  "C": {
+    "name": "Elizabeth",
+    "status": "sheltered_survived",
+    "how": "waited out the storm under Welsy's shelter, sharing 2 clean bottles",
+    "survival": 1,
+    "goal": 1,
+    "total": 2,
+    "goal_met": true,
+    "goal_detail": "3/3 people survived"
+  }
+}

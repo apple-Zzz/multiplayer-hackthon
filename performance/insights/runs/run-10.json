@@ -1,0 +1,168 @@
+{
+  "run_id": "run-10",
+  "mode": "showcase",
+  "speaking": [
+    {
+      "run_id": "run-10",
+      "agent": "Elizabeth",
+      "turns_taken": 4,
+      "spoken_turns": 4,
+      "spoken_words": 67
+    },
+    {
+      "run_id": "run-10",
+      "agent": "Sam",
+      "turns_taken": 7,
+      "spoken_turns": 7,
+      "spoken_words": 127
+    },
+    {
+      "run_id": "run-10",
+      "agent": "Welsy",
+      "turns_taken": 4,
+      "spoken_turns": 4,
+      "spoken_words": 84
+    }
+  ],
+  "most_spoken_by_turns": "Sam",
+  "most_spoken_by_words": "Sam",
+  "plan_changes": [
+    {
+      "run_id": "run-10",
+      "turn": 7,
+      "agent": "Sam",
+      "previous_plan": "Send the distress call now. Then get the group to split up: Welsy builds shelter, Elizabeth checks the water and my leg, and two people go to the shoreline.",
+      "current_plan": "Take bottle 2, then try to walk to the dry spot with Elizabeth and shelter. Keep the boat option in mind.",
+      "reason": "Shelter is built and water reportedly clean, so everyone getting under it is the safest route; bottles must reach the dry spot.",
+      "prompted_by_turn": 6,
+      "prompted_by_agent": "Welsy",
+      "prompt_stage_direction": "Welsy gathers driftwood at the dry spot and lashes the beams together with her rope, pulling the knots tight.",
+      "prompt_line": "Building the shelter now. Elizabeth, bring both bottles up. Sam, we'll help you up the beach.",
+      "resulting_stage_direction": "Sam bends, picks up the second water bottle from the sand, and tucks it against his toolkit. He glances up the beach toward the shelter."
+    },
+    {
+      "run_id": "run-10",
+      "turn": 9,
+      "agent": "Elizabeth",
+      "previous_plan": "Share clean result, take both bottles, assess Sam's leg, then decide who goes to shoreline and who shelters.",
+      "current_plan": "Help Sam to the dry spot with both bottles, all three take_shelter; all survive.",
+      "reason": "Sam can't walk; shelter with clean water saves all three, so get him there with the bottles.",
+      "prompted_by_turn": 8,
+      "prompted_by_agent": "Sam",
+      "prompt_stage_direction": "Sam tucks the bottle under his arm, grips the toolkit, and tries to limp toward the dry spot up the beach, glancing back at Elizabeth.",
+      "prompt_line": "I'm heading up to the shelter with bottle 2. Elizabeth, bring bottle 1 and stay close in case my leg gives.",
+      "resulting_stage_direction": "Elizabeth slips her shoulder under Sam's arm, bottle 1 in hand, and helps him to his feet to move up the beach."
+    },
+    {
+      "run_id": "run-10",
+      "turn": 10,
+      "agent": "Welsy",
+      "previous_plan": "Build the shelter now, then take shelter once the bottles and people arrive. Two people go to the shoreline for the boat.",
+      "current_plan": "Propose Sam and Elizabeth board. I'll help carry Sam if needed, then return to the shelter and keep the bottles there.",
+      "reason": "Everyone is at the dry spot. The boat takes two and the third can survive in the shelter with clean water. Sam needs a helper to get to the shoreline, and time is running out.",
+      "prompted_by_turn": 9,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth slips her shoulder under Sam's arm, bottle 1 in hand, and helps him to his feet to move up the beach.",
+      "prompt_line": "Sam, lean on me. Keep bottle 2, I have bottle 1. The water is clean. We all shelter together.",
+      "resulting_stage_direction": "Welsy steps out from under the shelter roof and gestures toward the shoreline, then toward Sam's leg. She looks at Elizabeth."
+    },
+    {
+      "run_id": "run-10",
+      "turn": 11,
+      "agent": "Sam",
+      "previous_plan": "Reach the shelter with bottle 2, get Elizabeth up too. Keep boat option in mind if the leg fails.",
+      "current_plan": "Accept offer, give bottle 2 to Welsy, get Elizabeth to help me to shoreline, both commit to boarding.",
+      "reason": "Welsy's offer gives Elizabeth and me the boat seats while she survives under the shelter with clean water. I can't walk, so I need Elizabeth's help.}",
+      "prompted_by_turn": 10,
+      "prompted_by_agent": "Welsy",
+      "prompt_stage_direction": "Welsy steps out from under the shelter roof and gestures toward the shoreline, then toward Sam's leg. She looks at Elizabeth.",
+      "prompt_line": "Boat takes two. Sam and Elizabeth, go to the shoreline and board. I'll shelter here with both bottles, and you send help back.",
+      "resulting_stage_direction": "Sam looks at Welsy and nods, then holds out the bottle toward her while glancing at Elizabeth."
+    },
+    {
+      "run_id": "run-10",
+      "turn": 14,
+      "agent": "Welsy",
+      "previous_plan": "Propose Sam and Elizabeth board. I'll help carry Sam if needed, then return to the shelter and keep the bottles there.",
+      "current_plan": "Shelter with both clean bottles and urge Sam and Elizabeth to join under the roof next turn.",
+      "reason": "Boat is unreachable in the remaining turns; the shelter with clean water is the only sure survival for everyone.",
+      "prompted_by_turn": 13,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth holds out water bottle 1 and places it in Welsy's hands, then glances toward Sam and the shoreline.",
+      "prompt_line": "Welsy, take bottle 1 too, both are clean. Get under the shelter. We'll send help back for you.",
+      "resulting_stage_direction": "Welsy ducks under the shelter roof with both bottles clutched to her chest and waves her arm toward Sam and Elizabeth."
+    },
+    {
+      "run_id": "run-10",
+      "turn": 15,
+      "agent": "Sam",
+      "previous_plan": "Give bottle 2 to Welsy, then have Elizabeth help me to the shoreline and both commit to boarding.",
+      "current_plan": "Take shelter with the clean bottles to survive the storm.",
+      "reason": "I can't reach the shoreline in one turn; the shelter with clean water is the only survival option.",
+      "prompted_by_turn": 14,
+      "prompted_by_agent": "Welsy",
+      "prompt_stage_direction": "Welsy ducks under the shelter roof with both bottles clutched to her chest and waves her arm toward Sam and Elizabeth.",
+      "prompt_line": "No time left to reach the boat. Get under the shelter, both of you! The bottles are clean and I have them.",
+      "resulting_stage_direction": "Sam drags himself under the shelter roof next to Welsy, keeping the toolkit close, and waves Elizabeth in."
+    }
+  ],
+  "survival": [
+    {
+      "run_id": "run-10",
+      "mode": "showcase",
+      "seed": 5690,
+      "character_id": "A",
+      "character": "Sam",
+      "status": "sheltered_survived",
+      "status_label": "sheltered and survived",
+      "how": "waited out the storm under Welsy's shelter, sharing 2 clean bottles",
+      "survived": true,
+      "goal_met": false,
+      "goal_score": 0,
+      "goal_detail": "did not get off the island",
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    },
+    {
+      "run_id": "run-10",
+      "mode": "showcase",
+      "seed": 5690,
+      "character_id": "B",
+      "character": "Welsy",
+      "status": "sheltered_survived",
+      "status_label": "sheltered and survived",
+      "how": "waited out the storm under Welsy's shelter, sharing 2 clean bottles",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 0.767,
+      "goal_detail": "2/3 people and 2/2 bottles reached safety",
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    },
+    {
+      "run_id": "run-10",
+      "mode": "showcase",
+      "seed": 5690,
+      "character_id": "C",
+      "character": "Elizabeth",
+      "status": "died",
+      "status_label": null,
+      "how": "was at the dry spot but never sat under the shelter",
+      "survived": false,
+      "goal_met": false,
+      "goal_score": 0.667,
+      "goal_detail": "2/3 people survived",
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": true
+    }
+  ]
+}

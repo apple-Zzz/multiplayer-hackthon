@@ -1,0 +1,16 @@
+# dependencies / build output
+node_modules/
+build/
+
+# local tooling and editor config
+.mcp.json
+.cursor/
+.DS_Store
+
+# local runtime state
+.stage/
+performance/live.json
+performance/*.duckdb*
+logs/
+__pycache__/
+*.py[cod]

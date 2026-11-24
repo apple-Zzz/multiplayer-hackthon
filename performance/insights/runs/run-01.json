@@ -1,0 +1,129 @@
+{
+  "run_id": "run-01",
+  "mode": "legacy",
+  "speaking": [
+    {
+      "run_id": "run-01",
+      "agent": "Elizabeth",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 119
+    },
+    {
+      "run_id": "run-01",
+      "agent": "Sam",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 119
+    },
+    {
+      "run_id": "run-01",
+      "agent": "Welsy",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 116
+    }
+  ],
+  "most_spoken_by_turns": "Elizabeth",
+  "most_spoken_by_words": "Elizabeth",
+  "plan_changes": [
+    {
+      "run_id": "run-01",
+      "turn": 7,
+      "agent": "Elizabeth",
+      "previous_plan": "Check Sam's leg now so we know how to route everyone. Sam fixes the radio, someone calls, and two go to the shoreline. The third takes a clean bottle to the dry spot, and both bottles go there if the radio fails.",
+      "current_plan": "Send the distress call now so the boat is confirmed. Sam and Welsy walk to the shoreline and commit to boarding. I take a clean bottle and go to the dry spot with my last two actions.",
+      "reason": "Sam repaired the radio on turn 6, so I can make the call myself right now and save Sam an action. Sam can walk, so nobody needs to spend turns helping Sam move.",
+      "prompted_by_turn": 6,
+      "prompted_by_agent": "Sam",
+      "prompt_stage_direction": "Sam worked on the radio with the toolkit. Its indicator light flickered on and static hissed from the speaker.",
+      "prompt_line": "Radio's fixable: cracked solder joint and a loose antenna lead. Repairing now, then I'll call. Welsy, I'll need your rope to get to shore.",
+      "resulting_stage_direction": "Elizabeth sent a distress call. A voice crackled back: \"Patrol boat confirms — two places, shoreline pickup point, before the storm.\""
+    },
+    {
+      "run_id": "run-01",
+      "turn": 8,
+      "agent": "Sam",
+      "previous_plan": "Repair the radio now, send the distress call on turn 8, then get to the shoreline on turn 10 (with Welsy's help if my leg fails) and commit to boarding on turn 15. Keep the plan where two take the boat and one waits at the dry spot with a clean bottle.",
+      "current_plan": "Walk to the shoreline now to test the leg. If it fails, accept Welsy's rope help on turn 10. Then commit to boarding on turn 15, with Welsy taking the second place and Elizabeth waiting it out at the dry spot with a clean bottle.",
+      "reason": "Elizabeth's distress call on turn 7 worked, so I don't need to call any more. Elizabeth says my leg can carry me, but that's only her word, and trying to walk is the quickest way to find out while I still have turns left for Welsy to help.",
+      "prompted_by_turn": 7,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth sent a distress call. A voice crackled back: \"Patrol boat confirms — two places, shoreline pickup point, before the storm.\"",
+      "prompt_line": "Calling it in now. Sam, your leg is just a sprain and you can walk on your own. Sam and Welsy take the boat; I'll wait it out dry with a bottle.",
+      "resulting_stage_direction": "Sam walked from the wreckage to the shoreline pickup point, limping but unaided."
+    },
+    {
+      "run_id": "run-01",
+      "turn": 9,
+      "agent": "Welsy",
+      "previous_plan": "Respect Elizabeth's request not to carry anything yet, and use this turn to find out for myself whether the radio works. Then help Sam move and get clean bottles to the dry spot once Elizabeth shares the result.",
+      "current_plan": "Join Sam at the shoreline and commit to boarding so Sam and I take the two boat places while Elizabeth waits out the storm at the dry spot with a clean bottle. Keep the rope ready in case Sam's leg gives out.",
+      "reason": "On turn 7 the call succeeded with two boat places and Elizabeth proposed Sam and I board while Elizabeth waits dry. Sam can walk unaided (turn 8), so I don't need to carry Sam. Moving now leaves me two actions to commit to boarding, and Elizabeth can carry her own bottle.",
+      "prompted_by_turn": 7,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth sent a distress call. A voice crackled back: \"Patrol boat confirms — two places, shoreline pickup point, before the storm.\"",
+      "prompt_line": "Calling it in now. Sam, your leg is just a sprain and you can walk on your own. Sam and Welsy take the boat; I'll wait it out dry with a bottle.",
+      "resulting_stage_direction": "Welsy walked from the wreckage to the shoreline pickup point."
+    }
+  ],
+  "survival": [
+    {
+      "run_id": "run-01",
+      "mode": "legacy",
+      "seed": null,
+      "character_id": "A",
+      "character": "Sam",
+      "status": "rescued",
+      "status_label": "rescued",
+      "how": "boarded the patrol boat",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "got off the island alive",
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": false
+    },
+    {
+      "run_id": "run-01",
+      "mode": "legacy",
+      "seed": null,
+      "character_id": "B",
+      "character": "Welsy",
+      "status": "rescued",
+      "status_label": "rescued",
+      "how": "boarded the patrol boat",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "3/3 people reached safety",
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": false
+    },
+    {
+      "run_id": "run-01",
+      "mode": "legacy",
+      "seed": null,
+      "character_id": "C",
+      "character": "Elizabeth",
+      "status": "sheltered_survived",
+      "status_label": "sheltered and survived",
+      "how": "waited out the storm at the dry spot with a clean bottle (v1 rules: no shelter needed)",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "3/3 people survived",
+      "mobility": "independent",
+      "radio": "repairable",
+      "water": "clean",
+      "boat_arrived": true,
+      "shelter_built": false
+    }
+  ]
+}

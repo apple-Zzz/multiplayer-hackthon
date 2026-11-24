@@ -1,0 +1,17 @@
+{
+  "run_id": "run-04",
+  "mode": "showcase",
+  "seed": 103,
+  "model": "sonnet",
+  "policy_version": 0,
+  "policy_version_after": 0,
+  "hidden": {
+    "mobility": "independent",
+    "radio": "repairable",
+    "water": "clean"
+  },
+  "started": "2026-11-24T01:06:41.089Z",
+  "finished": "2026-11-24T01:08:11.001Z",
+  "cost_usd": 0.6641,
+  "rules": "v2"
+}

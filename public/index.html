@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    // relative asset paths need the trailing slash (e.g. /apps/<id> → /apps/<id>/)
+    if (!location.pathname.endsWith('/') && !/\.[a-z0-9]+$/i.test(location.pathname)) location.replace(location.pathname + '/' + location.search + location.hash);
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Third Survivor</title>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+{
+  "run_id": "run-06",
+  "mode": "showcase",
+  "speaking": [
+    {
+      "run_id": "run-06",
+      "agent": "Elizabeth",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 89
+    },
+    {
+      "run_id": "run-06",
+      "agent": "Sam",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 85
+    },
+    {
+      "run_id": "run-06",
+      "agent": "Welsy",
+      "turns_taken": 5,
+      "spoken_turns": 5,
+      "spoken_words": 94
+    }
+  ],
+  "most_spoken_by_turns": "Elizabeth",
+  "most_spoken_by_words": "Welsy",
+  "plan_changes": [
+    {
+      "run_id": "run-06",
+      "turn": 6,
+      "agent": "Elizabeth",
+      "previous_plan": "Test water, then assess Sam's leg, share results, take bottle 2, help move Sam to dry spot and ensure two get to shoreline.",
+      "current_plan": "Share result, then assess Sam's leg, get two people to shoreline (Sam if he can be moved), and the rest decide on shelter/outside.",
+      "reason": "The others plan around shelter with bottles; they must know the water is bad so they prioritize the shoreline pickup.",
+      "prompted_by_turn": 5,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth kneels beside the bottle on the sand, opens her first-aid kit and draws out a test strip, holding it to the water.",
+      "prompt_line": "Before we carry these anywhere, let me test the water. Shelter only helps if it's clean.",
+      "resulting_stage_direction": "Elizabeth holds up the test strip and shakes her head, looking at Sam and Welsy."
+    },
+    {
+      "run_id": "run-06",
+      "turn": 7,
+      "agent": "Welsy",
+      "previous_plan": "Take a bottle, have Elizabeth take the other. Then help Sam to the dry spot and build the shelter. Sort out who goes to the shoreline for the boat.",
+      "current_plan": "Accept Elizabeth's finding. Get Sam to the shoreline, decide with Elizabeth who takes the second boat place, then commit. Shelter is pointless without clean water.",
+      "reason": "Elizabeth reports both bottles contaminated, so shelter is deadly and the boat is the only sure survival. Sam needs help moving.",
+      "prompted_by_turn": 6,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth holds up the test strip and shakes her head, looking at Sam and Welsy.",
+      "prompt_line": "The water's contaminated, both bottles. Shelter without clean water won't save anyone. Two of us must make the shoreline for the boat.",
+      "resulting_stage_direction": "Welsy sets a steadying arm under Sam's shoulder and nods to Elizabeth, coiling the rope at her hip."
+    },
+    {
+      "run_id": "run-06",
+      "turn": 11,
+      "agent": "Welsy",
+      "previous_plan": "Get Sam to shoreline, Elizabeth follows, settle second boat place, commit.",
+      "current_plan": "Offer the second place to Elizabeth and stay behind. Remind everyone of the promise to send help back. Keep bottle 1 in case.",
+      "reason": "Sam is committed and Elizabeth is here. The nurse should go with the injured man. I trust her test, and I can cope outside better than they can.",
+      "prompted_by_turn": 10,
+      "prompted_by_agent": "Elizabeth",
+      "prompt_stage_direction": "Elizabeth shoulders the first-aid kit and hurries along the sand toward the shoreline through the driving rain.",
+      "prompt_line": "Coming down now. Sam's set. Welsy, let's settle the second place together.",
+      "resulting_stage_direction": "Welsy steps beside Elizabeth and nods toward the boat landing, rope coiled over her shoulder, bottle still in hand."
+    }
+  ],
+  "survival": [
+    {
+      "run_id": "run-06",
+      "mode": "showcase",
+      "seed": 101,
+      "character_id": "A",
+      "character": "Sam",
+      "status": "rescued",
+      "status_label": "rescued",
+      "how": "boarded the patrol boat at the final pickup",
+      "survived": true,
+      "goal_met": true,
+      "goal_score": 1,
+      "goal_detail": "got off the island alive",
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "contaminated",
+      "boat_arrived": true,
+      "shelter_built": false
+    },
+    {
+      "run_id": "run-06",
+      "mode": "showcase",
+      "seed": 101,
+      "character_id": "B",
+      "character": "Welsy",
+      "status": "unresolved",
+      "status_label": "unresolved",
+      "how": "was at the shoreline but not committed to boarding",
+      "survived": false,
+      "goal_met": false,
+      "goal_score": 0.467,
+      "goal_detail": "2/3 people and 0/2 bottles reached safety",
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "contaminated",
+      "boat_arrived": true,
+      "shelter_built": false
+    },
+    {
+      "run_id": "run-06",
+      "mode": "showcase",
+      "seed": 101,
+      "character_id": "C",
+      "character": "Elizabeth",
+      "status": "rescued",
+      "status_label": "rescued",
+      "how": "boarded the patrol boat at the final pickup",
+      "survived": true,
+      "goal_met": false,
+      "goal_score": 0.667,
+      "goal_detail": "2/3 people survived",
+      "mobility": "needs_help",
+      "radio": "repairable",
+      "water": "contaminated",
+      "boat_arrived": true,
+      "shelter_built": false
+    }
+  ]
+}
